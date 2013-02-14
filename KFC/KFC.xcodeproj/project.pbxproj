@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7998A3516CD1A3100729FE3 /* KFCDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7998A3316CD1A3100729FE3 /* KFCDataModel.xcdatamodeld */; };
+		C7998A3C16CD208600729FE3 /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A3B16CD208600729FE3 /* Type.m */; };
+		C7998A6D16CD20F300729FE3 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A6C16CD20F300729FE3 /* DataManager.m */; };
+		C7998A7016CD22F600729FE3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7998A6E16CD22E200729FE3 /* CoreData.framework */; };
+		C7998A7316CD24ED00729FE3 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7216CD24ED00729FE3 /* Restaurant.m */; };
+		C7998A7616CD250200729FE3 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7516CD250200729FE3 /* Menu.m */; };
+		C7998A7916CD251700729FE3 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7816CD251700729FE3 /* Image.m */; };
 		C7A19F5A16CBC09000CE9CEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5916CBC09000CE9CEE /* UIKit.framework */; };
 		C7A19F5C16CBC09000CE9CEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5B16CBC09000CE9CEE /* Foundation.framework */; };
 		C7A19F5E16CBC09000CE9CEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5D16CBC09000CE9CEE /* CoreGraphics.framework */; };
@@ -21,6 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7998A3416CD1A3100729FE3 /* KFCDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFCDataModel.xcdatamodel; sourceTree = "<group>"; };
+		C7998A3A16CD208600729FE3 /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type.h; sourceTree = "<group>"; };
+		C7998A3B16CD208600729FE3 /* Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type.m; sourceTree = "<group>"; };
+		C7998A6B16CD20F300729FE3 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		C7998A6C16CD20F300729FE3 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		C7998A6E16CD22E200729FE3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C7998A7116CD24ED00729FE3 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		C7998A7216CD24ED00729FE3 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		C7998A7416CD250200729FE3 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		C7998A7516CD250200729FE3 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		C7998A7716CD251700729FE3 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		C7998A7816CD251700729FE3 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		C7A19F5516CBC09000CE9CEE /* KFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A19F5916CBC09000CE9CEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7A19F5B16CBC09000CE9CEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7998A7016CD22F600729FE3 /* CoreData.framework in Frameworks */,
 				C7A19F5A16CBC09000CE9CEE /* UIKit.framework in Frameworks */,
 				C7A19F5C16CBC09000CE9CEE /* Foundation.framework in Frameworks */,
 				C7A19F5E16CBC09000CE9CEE /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +73,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7998A3116CD19FC00729FE3 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7998A3316CD1A3100729FE3 /* KFCDataModel.xcdatamodeld */,
+				C7998A6B16CD20F300729FE3 /* DataManager.h */,
+				C7998A6C16CD20F300729FE3 /* DataManager.m */,
+				C7998A6A16CD20D400729FE3 /* Data Objects */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		C7998A6A16CD20D400729FE3 /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C7998A3A16CD208600729FE3 /* Type.h */,
+				C7998A3B16CD208600729FE3 /* Type.m */,
+				C7998A7116CD24ED00729FE3 /* Restaurant.h */,
+				C7998A7216CD24ED00729FE3 /* Restaurant.m */,
+				C7998A7416CD250200729FE3 /* Menu.h */,
+				C7998A7516CD250200729FE3 /* Menu.m */,
+				C7998A7716CD251700729FE3 /* Image.h */,
+				C7998A7816CD251700729FE3 /* Image.m */,
+			);
+			name = "Data Objects";
+			sourceTree = "<group>";
+		};
 		C7A19F4A16CBC09000CE9CEE = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +119,7 @@
 		C7A19F5816CBC09000CE9CEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7998A6E16CD22E200729FE3 /* CoreData.framework */,
 				C7A19F5916CBC09000CE9CEE /* UIKit.framework */,
 				C7A19F5B16CBC09000CE9CEE /* Foundation.framework */,
 				C7A19F5D16CBC09000CE9CEE /* CoreGraphics.framework */,
@@ -88,6 +135,7 @@
 				C7A19F7116CBC09000CE9CEE /* MainStoryboard.storyboard */,
 				C7A19F7416CBC09000CE9CEE /* ViewController.h */,
 				C7A19F7516CBC09000CE9CEE /* ViewController.m */,
+				C7998A3116CD19FC00729FE3 /* Data Model */,
 				C7A19F6016CBC09000CE9CEE /* Supporting Files */,
 			);
 			path = KFC;
@@ -176,6 +224,12 @@
 				C7A19F6616CBC09000CE9CEE /* main.m in Sources */,
 				C7A19F6A16CBC09000CE9CEE /* AppDelegate.m in Sources */,
 				C7A19F7616CBC09000CE9CEE /* ViewController.m in Sources */,
+				C7998A3516CD1A3100729FE3 /* KFCDataModel.xcdatamodeld in Sources */,
+				C7998A3C16CD208600729FE3 /* Type.m in Sources */,
+				C7998A6D16CD20F300729FE3 /* DataManager.m in Sources */,
+				C7998A7316CD24ED00729FE3 /* Restaurant.m in Sources */,
+				C7998A7616CD250200729FE3 /* Menu.m in Sources */,
+				C7998A7916CD251700729FE3 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +346,22 @@
 				C7A19F7B16CBC09000CE9CEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C7998A3316CD1A3100729FE3 /* KFCDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C7998A3416CD1A3100729FE3 /* KFCDataModel.xcdatamodel */,
+			);
+			currentVersion = C7998A3416CD1A3100729FE3 /* KFCDataModel.xcdatamodel */;
+			path = KFCDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C7A19F4C16CBC09000CE9CEE /* Project object */;
 }

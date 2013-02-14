@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imageToRestaurant" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="restaurantToImage" inverseEntity="Restaurant" syncable="YES"/>
+    </entity>
+    <entity name="Menu" representedClassName="Menu" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="menuToType" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Type" inverseName="typeToMenu" inverseEntity="Type" syncable="YES"/>
+    </entity>
+    <entity name="Restaurant" representedClassName="Restaurant" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasAirCond" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasDelivery" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasDunken" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasKidsLanding" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasKidsParties" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasParking" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workingTime" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="restaurantToImage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="imageToRestaurant" inverseEntity="Image" syncable="YES"/>
+    </entity>
+    <entity name="Type" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="typeToMenu" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Menu" inverseName="menuToType" inverseEntity="Menu" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Image" positionX="234" positionY="257" width="128" height="73"/>
+        <element name="Menu" positionX="232" positionY="84" width="128" height="118"/>
+        <element name="Restaurant" positionX="45" positionY="180" width="128" height="208"/>
+        <element name="Type" positionX="423" positionY="189" width="128" height="73"/>
+    </elements>
+</model>
