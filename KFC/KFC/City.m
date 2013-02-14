@@ -12,6 +12,7 @@
 
 @implementation City
 
+@dynamic name;
 @dynamic cityToRestaurant;
 
 @end

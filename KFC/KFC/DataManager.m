@@ -12,6 +12,7 @@
 #import "Restaurant.h"
 #import "Menu.h"
 #import "Type.h"
+#import "City.h"
 
 @implementation DataManager
 
@@ -511,8 +512,191 @@ static NSUInteger currentNumberOfTracks;
     [t9 addTypeToMenu:[NSSet setWithObjects:m48, m49, m50, m51, nil]];
     
     //restaurants
+    //Sofia
+    City *c1 = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:cdCtx];
+    c1.name = @"София";
+    
     Restaurant *r1 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
-    r1.name = @"";
+    r1.name = @"KFC Стамболийски";
+    r1.address = @"Бул. „Александър Стамболийски”, 28";
+    r1.workingTime = @"понеделник – неделя: 11 – 24 часа";
+    r1.hasAirCond = [NSNumber numberWithBool:YES];
+    r1.hasDelivery = [NSNumber numberWithBool:YES];
+    r1.hasDunken = [NSNumber numberWithBool:NO];
+    r1.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r1.hasKidsParties = [NSNumber numberWithBool:NO];
+    r1.hasParking = [NSNumber numberWithBool:YES];
+    [r1 addRestaurantToCityObject:c1];
+    
+    Restaurant *r2 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r2.name = @"KFC Гарибалди";
+    r2.address = @"Площад „Гарибалди”, улица „Ангел Кънчев”, 2";
+    r2.workingTime = @"понеделник – събота: 10 – 23 часа, неделя: 11 – 23 часа";
+    r2.hasAirCond = [NSNumber numberWithBool:YES];
+    r2.hasDelivery = [NSNumber numberWithBool:NO];
+    r2.hasDunken = [NSNumber numberWithBool:NO];
+    r2.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r2.hasKidsParties = [NSNumber numberWithBool:NO];
+    r2.hasParking = [NSNumber numberWithBool:NO];
+    [r2 addRestaurantToCityObject:c1];
+
+    Restaurant *r3 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r3.name = @"KFC Лъвов мост";
+    r3.address = @"Площад „Лъвов мост”, булевард „Сливница”, 172";
+    r3.workingTime = @"понеделник – неделя: 11 - 22,30 часа";
+    r3.hasAirCond = [NSNumber numberWithBool:YES];
+    r3.hasDelivery = [NSNumber numberWithBool:YES];
+    r3.hasDunken = [NSNumber numberWithBool:YES];
+    r3.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r3.hasKidsParties = [NSNumber numberWithBool:YES];
+    r3.hasParking = [NSNumber numberWithBool:NO];
+    [r3 addRestaurantToCityObject:c1];
+
+    Restaurant *r4 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r4.name = @"KFC Люлин";
+    r4.address = @"Люлин VІІ микрорайон, булевард „Джавахарлал Неру”";
+    r4.workingTime = @"понеделник - неделя: 10 – 22.30 часа";
+    r4.hasAirCond = [NSNumber numberWithBool:YES];
+    r4.hasDelivery = [NSNumber numberWithBool:YES];
+    r4.hasDunken = [NSNumber numberWithBool:YES];
+    r4.hasKidsLanding = [NSNumber numberWithBool:YES];
+    r4.hasKidsParties = [NSNumber numberWithBool:YES];
+    r4.hasParking = [NSNumber numberWithBool:YES];
+    [r4 addRestaurantToCityObject:c1];
+
+    Restaurant *r5 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r5.name = @"KFC CCS";
+    r5.address = @"Булевард „Арсеналски”, City Center Sofia, етаж 3";
+    r5.workingTime = @"понеделник – неделя: 10 – 22 часа";
+    r5.hasAirCond = [NSNumber numberWithBool:YES];
+    r5.hasDelivery = [NSNumber numberWithBool:NO];
+    r5.hasDunken = [NSNumber numberWithBool:NO];
+    r5.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r5.hasKidsParties = [NSNumber numberWithBool:NO];
+    r5.hasParking = [NSNumber numberWithBool:YES];
+    [r5 addRestaurantToCityObject:c1];
+
+    Restaurant *r6 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r6.name = @"KFC Арена Младост";
+    r6.address = @"Бизнес Парк, Младост 4ри, ет. 2 /food court/";
+    r6.workingTime = @"понеделник - петък: 11 – 23 часа, събота, неделя: 10 - 23 ";
+    r6.hasAirCond = [NSNumber numberWithBool:YES];
+    r6.hasDelivery = [NSNumber numberWithBool:YES];
+    r6.hasDunken = [NSNumber numberWithBool:NO];
+    r6.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r6.hasKidsParties = [NSNumber numberWithBool:NO];
+    r6.hasParking = [NSNumber numberWithBool:YES];
+    [r6 addRestaurantToCityObject:c1];
+    
+    Restaurant *r7 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r7.name = @"KFC Сахаров";
+    r7.address = @"Адрес: София, Младост 1, бул. Сахаров №25";
+    r7.workingTime = @"всеки ден 10,30 - 22,30 часа";
+    r7.hasAirCond = [NSNumber numberWithBool:YES];
+    r7.hasDelivery = [NSNumber numberWithBool:YES];
+    r7.hasDunken = [NSNumber numberWithBool:NO];
+    r7.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r7.hasKidsParties = [NSNumber numberWithBool:YES];
+    r7.hasParking = [NSNumber numberWithBool:NO];
+    [r7 addRestaurantToCityObject:c1];
+
+    Restaurant *r8 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r8.name = @"KFC Сердика център";
+    r8.address = @"Булевард Ситняково, 48, Сердика център, етаж 2ри";
+    r8.workingTime = @"понеделник - неделя - 10 - 22 часа";
+    r8.hasAirCond = [NSNumber numberWithBool:YES];
+    r8.hasDelivery = [NSNumber numberWithBool:NO];
+    r8.hasDunken = [NSNumber numberWithBool:NO];
+    r8.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r8.hasKidsParties = [NSNumber numberWithBool:NO];
+    r8.hasParking = [NSNumber numberWithBool:YES];
+    [r8 addRestaurantToCityObject:c1];
+
+    Restaurant *r9 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r9.name = @"KFC The Mall";
+    r9.address = @"Булевард Цариградско шосе, 115, The Mall, food court";
+    r9.workingTime = @"понеделник - неделя - 10 - 22 часа";
+    r9.hasAirCond = [NSNumber numberWithBool:YES];
+    r9.hasDelivery = [NSNumber numberWithBool:NO];
+    r9.hasDunken = [NSNumber numberWithBool:NO];
+    r9.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r9.hasKidsParties = [NSNumber numberWithBool:NO];
+    r9.hasParking = [NSNumber numberWithBool:YES];
+    [r9 addRestaurantToCityObject:c1];
+    
+    [c1 addCityToRestaurant:[NSSet setWithObjects:r1, r2, r3, r4, r5, r6, r7, r8, r9, nil]];
+
+    //Plovdiv
+    City *c2 = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:cdCtx];
+    c2.name = @"Пловдив";
+    
+    Restaurant *r10 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r10.name = @"KFC Mall of Plovdiv";
+    r10.address = @"Адрес: Пловдив, ул. Перущица № 8";
+    r10.workingTime = @"неделя - сряда 10:00 - 22:00 часа четвъртък - събота 10:00 - 23:00 часа ";
+    r10.hasAirCond = [NSNumber numberWithBool:YES];
+    r10.hasDelivery = [NSNumber numberWithBool:NO];
+    r10.hasDunken = [NSNumber numberWithBool:NO];
+    r10.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r10.hasKidsParties = [NSNumber numberWithBool:NO];
+    r10.hasParking = [NSNumber numberWithBool:YES];
+    [r10 addRestaurantToCityObject:c2];
+    
+    [c2 addCityToRestaurant:[NSSet setWithObject:r10]];
+    
+    //Stara Zagora
+    City *c3 = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:cdCtx];
+    c3.name = @"Стара Загора";
+    
+    Restaurant *r11 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r11.name = @"KFC Park Mall";
+    r11.address = @"бул. Никола Петков, 25, ет.2 /food court/";
+    r11.workingTime = @"10:00 – 22:00 часа";
+    r11.hasAirCond = [NSNumber numberWithBool:YES];
+    r11.hasDelivery = [NSNumber numberWithBool:YES];
+    r11.hasDunken = [NSNumber numberWithBool:NO];
+    r11.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r11.hasKidsParties = [NSNumber numberWithBool:NO];
+    r11.hasParking = [NSNumber numberWithBool:YES];
+    [r11 addRestaurantToCityObject:c3];
+    
+    [c3 addCityToRestaurant:[NSSet setWithObject:r11]];
+    
+    //Burgas
+    City *c4 = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:cdCtx];
+    c4.name = @"Бургас";
+    
+    Restaurant *r12 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r12.name = @"KFC Бургас";
+    r12.address = @"Бургас Плаза Мол, 2 ет. Ул. Транспортна";
+    r12.workingTime = @"понеделник – четвъртък 10:00 - 21:00 петък – неделя 10:00 - 22:00";
+    r12.hasAirCond = [NSNumber numberWithBool:YES];
+    r12.hasDelivery = [NSNumber numberWithBool:YES];
+    r12.hasDunken = [NSNumber numberWithBool:NO];
+    r12.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r12.hasKidsParties = [NSNumber numberWithBool:NO];
+    r12.hasParking = [NSNumber numberWithBool:YES];
+    [r12 addRestaurantToCityObject:c4];
+    
+    [c4 addCityToRestaurant:[NSSet setWithObject:r12]];
+    
+    //Slynchev Bryag
+    City *c5 = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:cdCtx];
+    c5.name = @"Слънчев Бряг";
+    
+    Restaurant *r13 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
+    r13.name = @"KFC Royal Beach Mall";
+    r13.address = @"КК Слънчев бряг, Изток кв. 20, Сексция G";
+    r13.workingTime = @"понеделник – неделя: 10 - 22 часа";
+    r13.hasAirCond = [NSNumber numberWithBool:YES];
+    r13.hasDelivery = [NSNumber numberWithBool:NO];
+    r13.hasDunken = [NSNumber numberWithBool:NO];
+    r13.hasKidsLanding = [NSNumber numberWithBool:NO];
+    r13.hasKidsParties = [NSNumber numberWithBool:NO];
+    r13.hasParking = [NSNumber numberWithBool:NO];
+    [r13 addRestaurantToCityObject:c5];
+    
+    [c5 addCityToRestaurant:[NSSet setWithObject:r13]];
 }
 
 

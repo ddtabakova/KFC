@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="City" representedClassName="City" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="cityToRestaurant" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="restaurantToCity" inverseEntity="Restaurant" syncable="YES"/>
     </entity>
     <entity name="Image" representedClassName="Image" syncable="YES">
@@ -16,7 +17,6 @@
     </entity>
     <entity name="Restaurant" representedClassName="Restaurant" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasAirCond" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasDelivery" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasDunken" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -33,10 +33,10 @@
         <relationship name="typeToMenu" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Menu" inverseName="menuToType" inverseEntity="Menu" syncable="YES"/>
     </entity>
     <elements>
+        <element name="City" positionX="250" positionY="306" width="128" height="75"/>
         <element name="Image" positionX="225" positionY="476" width="128" height="73"/>
         <element name="Menu" positionX="232" positionY="84" width="128" height="118"/>
-        <element name="Restaurant" positionX="45" positionY="180" width="128" height="223"/>
+        <element name="Restaurant" positionX="45" positionY="180" width="128" height="210"/>
         <element name="Type" positionX="423" positionY="189" width="128" height="73"/>
-        <element name="City" positionX="250" positionY="306" width="128" height="58"/>
     </elements>
 </model>

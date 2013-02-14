@@ -7,13 +7,13 @@
 //
 
 #import "Restaurant.h"
+#import "City.h"
 #import "Image.h"
 
 
 @implementation Restaurant
 
 @dynamic address;
-@dynamic city;
 @dynamic hasAirCond;
 @dynamic hasDelivery;
 @dynamic hasDunken;
@@ -22,7 +22,7 @@
 @dynamic hasParking;
 @dynamic name;
 @dynamic workingTime;
-@dynamic restaurantToImage;
 @dynamic restaurantToCity;
+@dynamic restaurantToImage;
 
 @end

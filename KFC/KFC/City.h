@@ -13,6 +13,7 @@
 
 @interface City : NSManagedObject
 
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet *cityToRestaurant;
 @end
 

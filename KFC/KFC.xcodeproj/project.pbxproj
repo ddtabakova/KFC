@@ -13,8 +13,8 @@
 		C7998A7016CD22F600729FE3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7998A6E16CD22E200729FE3 /* CoreData.framework */; };
 		C7998A7616CD250200729FE3 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7516CD250200729FE3 /* Menu.m */; };
 		C7998A7916CD251700729FE3 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7816CD251700729FE3 /* Image.m */; };
-		C7998A7C16CD38DA00729FE3 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7B16CD38DA00729FE3 /* Restaurant.m */; };
-		C7998A7F16CD390000729FE3 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7E16CD390000729FE3 /* City.m */; };
+		C7998A9716CD4BE100729FE3 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A9616CD4BE100729FE3 /* Restaurant.m */; };
+		C7998A9A16CD567000729FE3 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A9916CD567000729FE3 /* City.m */; };
 		C7A19F5A16CBC09000CE9CEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5916CBC09000CE9CEE /* UIKit.framework */; };
 		C7A19F5C16CBC09000CE9CEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5B16CBC09000CE9CEE /* Foundation.framework */; };
 		C7A19F5E16CBC09000CE9CEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5D16CBC09000CE9CEE /* CoreGraphics.framework */; };
@@ -39,10 +39,10 @@
 		C7998A7516CD250200729FE3 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		C7998A7716CD251700729FE3 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		C7998A7816CD251700729FE3 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
-		C7998A7A16CD38DA00729FE3 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
-		C7998A7B16CD38DA00729FE3 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
-		C7998A7D16CD390000729FE3 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
-		C7998A7E16CD390000729FE3 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		C7998A9516CD4BE100729FE3 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		C7998A9616CD4BE100729FE3 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		C7998A9816CD567000729FE3 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		C7998A9916CD567000729FE3 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		C7A19F5516CBC09000CE9CEE /* KFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A19F5916CBC09000CE9CEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7A19F5B16CBC09000CE9CEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,10 +96,10 @@
 				C7998A7516CD250200729FE3 /* Menu.m */,
 				C7998A7716CD251700729FE3 /* Image.h */,
 				C7998A7816CD251700729FE3 /* Image.m */,
-				C7998A7A16CD38DA00729FE3 /* Restaurant.h */,
-				C7998A7B16CD38DA00729FE3 /* Restaurant.m */,
-				C7998A7D16CD390000729FE3 /* City.h */,
-				C7998A7E16CD390000729FE3 /* City.m */,
+				C7998A9516CD4BE100729FE3 /* Restaurant.h */,
+				C7998A9616CD4BE100729FE3 /* Restaurant.m */,
+				C7998A9816CD567000729FE3 /* City.h */,
+				C7998A9916CD567000729FE3 /* City.m */,
 			);
 			name = "Data Objects";
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 				C7998A6D16CD20F300729FE3 /* DataManager.m in Sources */,
 				C7998A7616CD250200729FE3 /* Menu.m in Sources */,
 				C7998A7916CD251700729FE3 /* Image.m in Sources */,
-				C7998A7C16CD38DA00729FE3 /* Restaurant.m in Sources */,
-				C7998A7F16CD390000729FE3 /* City.m in Sources */,
+				C7998A9716CD4BE100729FE3 /* Restaurant.m in Sources */,
+				C7998A9A16CD567000729FE3 /* City.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
