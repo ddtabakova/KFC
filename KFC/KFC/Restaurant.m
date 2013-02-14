@@ -23,5 +23,6 @@
 @dynamic name;
 @dynamic workingTime;
 @dynamic restaurantToImage;
+@dynamic restaurantToCity;
 
 @end

@@ -24,6 +24,7 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * workingTime;
 @property (nonatomic, retain) NSSet *restaurantToImage;
+@property (nonatomic, retain) NSSet *restaurantToCity;
 @end
 
 @interface Restaurant (CoreDataGeneratedAccessors)
@@ -32,5 +33,10 @@
 - (void)removeRestaurantToImageObject:(Image *)value;
 - (void)addRestaurantToImage:(NSSet *)values;
 - (void)removeRestaurantToImage:(NSSet *)values;
+
+- (void)addRestaurantToCityObject:(NSManagedObject *)value;
+- (void)removeRestaurantToCityObject:(NSManagedObject *)value;
+- (void)addRestaurantToCity:(NSSet *)values;
+- (void)removeRestaurantToCity:(NSSet *)values;
 
 @end
