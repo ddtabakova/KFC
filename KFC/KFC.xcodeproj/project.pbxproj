@@ -15,13 +15,11 @@
 		C7998A7916CD251700729FE3 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A7816CD251700729FE3 /* Image.m */; };
 		C7998A9716CD4BE100729FE3 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A9616CD4BE100729FE3 /* Restaurant.m */; };
 		C7998A9A16CD567000729FE3 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A9916CD567000729FE3 /* City.m */; };
-		C79CB0FD16CE7ED200771DBA /* kfc-tabbar-selected-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB0FA16CE7ED200771DBA /* kfc-tabbar-selected-1@2x.png */; };
-		C79CB0FE16CE7ED200771DBA /* kfc-tabbar-selected-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB0FB16CE7ED200771DBA /* kfc-tabbar-selected-2@2x.png */; };
-		C79CB0FF16CE7ED200771DBA /* kfc-tabbar-selected-0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB0FC16CE7ED200771DBA /* kfc-tabbar-selected-0@2x.png */; };
 		C79CB10516CE7F9A00771DBA /* KFCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79CB10416CE7F9A00771DBA /* KFCTabBarController.m */; };
-		C79CB10916CE82C900771DBA /* kfc-tabbar-selected-0.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB10616CE82C900771DBA /* kfc-tabbar-selected-0.png */; };
-		C79CB10A16CE82C900771DBA /* kfc-tabbar-selected-2.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB10716CE82C900771DBA /* kfc-tabbar-selected-2.png */; };
-		C79CB10B16CE82C900771DBA /* kfc-tabbar-selected-1.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB10816CE82C900771DBA /* kfc-tabbar-selected-1.png */; };
+		C79CB11816CEA71E00771DBA /* kfc-tabbar-selected-0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB11516CEA71E00771DBA /* kfc-tabbar-selected-0@2x.png */; };
+		C79CB11916CEA71E00771DBA /* kfc-tabbar-selected-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB11616CEA71E00771DBA /* kfc-tabbar-selected-2@2x.png */; };
+		C79CB11A16CEA71E00771DBA /* kfc-tabbar-selected-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB11716CEA71E00771DBA /* kfc-tabbar-selected-1@2x.png */; };
+		C79CB11C16CEA78300771DBA /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CB11B16CEA78300771DBA /* transparent.png */; };
 		C7A19F5A16CBC09000CE9CEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5916CBC09000CE9CEE /* UIKit.framework */; };
 		C7A19F5C16CBC09000CE9CEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5B16CBC09000CE9CEE /* Foundation.framework */; };
 		C7A19F5E16CBC09000CE9CEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A19F5D16CBC09000CE9CEE /* CoreGraphics.framework */; };
@@ -49,14 +47,12 @@
 		C7998A9616CD4BE100729FE3 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		C7998A9816CD567000729FE3 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
 		C7998A9916CD567000729FE3 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
-		C79CB0FA16CE7ED200771DBA /* kfc-tabbar-selected-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-1@2x.png"; sourceTree = "<group>"; };
-		C79CB0FB16CE7ED200771DBA /* kfc-tabbar-selected-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-2@2x.png"; sourceTree = "<group>"; };
-		C79CB0FC16CE7ED200771DBA /* kfc-tabbar-selected-0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-0@2x.png"; sourceTree = "<group>"; };
 		C79CB10316CE7F9A00771DBA /* KFCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCTabBarController.h; sourceTree = "<group>"; };
 		C79CB10416CE7F9A00771DBA /* KFCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCTabBarController.m; sourceTree = "<group>"; };
-		C79CB10616CE82C900771DBA /* kfc-tabbar-selected-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-0.png"; sourceTree = "<group>"; };
-		C79CB10716CE82C900771DBA /* kfc-tabbar-selected-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-2.png"; sourceTree = "<group>"; };
-		C79CB10816CE82C900771DBA /* kfc-tabbar-selected-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-1.png"; sourceTree = "<group>"; };
+		C79CB11516CEA71E00771DBA /* kfc-tabbar-selected-0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-0@2x.png"; sourceTree = "<group>"; };
+		C79CB11616CEA71E00771DBA /* kfc-tabbar-selected-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-2@2x.png"; sourceTree = "<group>"; };
+		C79CB11716CEA71E00771DBA /* kfc-tabbar-selected-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfc-tabbar-selected-1@2x.png"; sourceTree = "<group>"; };
+		C79CB11B16CEA78300771DBA /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
 		C7A19F5516CBC09000CE9CEE /* KFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A19F5916CBC09000CE9CEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7A19F5B16CBC09000CE9CEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,12 +123,10 @@
 		C79CB0F916CE7B3900771DBA /* TabBar  */ = {
 			isa = PBXGroup;
 			children = (
-				C79CB10616CE82C900771DBA /* kfc-tabbar-selected-0.png */,
-				C79CB10816CE82C900771DBA /* kfc-tabbar-selected-1.png */,
-				C79CB10716CE82C900771DBA /* kfc-tabbar-selected-2.png */,
-				C79CB0FC16CE7ED200771DBA /* kfc-tabbar-selected-0@2x.png */,
-				C79CB0FA16CE7ED200771DBA /* kfc-tabbar-selected-1@2x.png */,
-				C79CB0FB16CE7ED200771DBA /* kfc-tabbar-selected-2@2x.png */,
+				C79CB11B16CEA78300771DBA /* transparent.png */,
+				C79CB11516CEA71E00771DBA /* kfc-tabbar-selected-0@2x.png */,
+				C79CB11616CEA71E00771DBA /* kfc-tabbar-selected-2@2x.png */,
+				C79CB11716CEA71E00771DBA /* kfc-tabbar-selected-1@2x.png */,
 			);
 			name = "TabBar ";
 			sourceTree = "<group>";
@@ -250,12 +244,10 @@
 				C7A19F6E16CBC09000CE9CEE /* Default@2x.png in Resources */,
 				C7A19F7016CBC09000CE9CEE /* Default-568h@2x.png in Resources */,
 				C7A19F7316CBC09000CE9CEE /* MainStoryboard.storyboard in Resources */,
-				C79CB0FD16CE7ED200771DBA /* kfc-tabbar-selected-1@2x.png in Resources */,
-				C79CB0FE16CE7ED200771DBA /* kfc-tabbar-selected-2@2x.png in Resources */,
-				C79CB0FF16CE7ED200771DBA /* kfc-tabbar-selected-0@2x.png in Resources */,
-				C79CB10916CE82C900771DBA /* kfc-tabbar-selected-0.png in Resources */,
-				C79CB10A16CE82C900771DBA /* kfc-tabbar-selected-2.png in Resources */,
-				C79CB10B16CE82C900771DBA /* kfc-tabbar-selected-1.png in Resources */,
+				C79CB11816CEA71E00771DBA /* kfc-tabbar-selected-0@2x.png in Resources */,
+				C79CB11916CEA71E00771DBA /* kfc-tabbar-selected-2@2x.png in Resources */,
+				C79CB11A16CEA71E00771DBA /* kfc-tabbar-selected-1@2x.png in Resources */,
+				C79CB11C16CEA78300771DBA /* transparent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,10 +346,14 @@
 		C7A19F7A16CBC09000CE9CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dimitar Dobrev (PMBE6NFJV7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dimitar Dobrev (PMBE6NFJV7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFC/KFC-Prefix.pch";
 				INFOPLIST_FILE = "KFC/KFC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D6E55FC9-5C53-4F11-93E9-7B89258153DA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D6E55FC9-5C53-4F11-93E9-7B89258153DA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

@@ -40,7 +40,7 @@
     for (int i = 0; i < self.tabBar.items.count; ++i) {
         [[self.tabBar.items objectAtIndex:i] setTag:i];
     }
-    
+    [self.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"transparent.png"]];
     [self.tabBar setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"kfc-tabbar-selected-%d.png", [self.tabBar.selectedItem tag]]]];
 }
 
