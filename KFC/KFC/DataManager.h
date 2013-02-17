@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface DataManager : NSObject
-
++ (NSManagedObjectContext *)managedObjectContext;
++ (void)saveDefaultData;
 @end

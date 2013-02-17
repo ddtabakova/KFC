@@ -7,6 +7,9 @@
 //
 #import <MapKit/MapKit.h>
 #import "KFCRestaurantsMapViewController.h"
+#import "DataManager.h"
+#import "Restaurant.h"
+#import "RestourantAnnotation.h"
 
 @interface KFCRestaurantsMapViewController ()
 @property (strong, nonatomic) IBOutlet MKMapView *restaurantsMapView;
@@ -27,7 +30,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	NSManagedObjectContext *moc = [DataManager managedObjectContext];
+	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Restaurant" inManagedObjectContext:moc];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	[request setEntity:entityDescription];
+    [request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    
+    self.resultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:nil cacheName:@"restaurant_list.cache"];
+    self.resultsController.delegate = self;
+    
+    NSError* error;
+	BOOL success = [self.resultsController performFetch:&error];
+    
+    if (!success) {
+        NSLog(@"The objects cannot be retrieved");
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,5 +68,58 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(centerCoordinate, zoomScale, zoomScale);
     MKCoordinateRegion adjustedRegion = [self.restaurantsMapView regionThatFits:viewRegion];
     [self.restaurantsMapView setRegion:adjustedRegion animated:YES];
+    [self plotRestaurantObjects];
 }
+
+#pragma Mark - MapViewDelegate
+
+- (void) plotRestaurantObjects{
+    for (Restaurant *restaurantObject in [self.resultsController fetchedObjects]) {
+        NSNumber *latitude = [restaurantObject lat];
+        NSNumber *longitude = [restaurantObject lon];
+        NSString *name = [restaurantObject name];
+        NSString *address = [restaurantObject address];
+        CLLocationCoordinate2D coordinate;
+        coordinate.latitude = [latitude doubleValue];
+        coordinate.longitude = longitude.doubleValue;
+        RestourantAnnotation *annotation = [[RestourantAnnotation alloc] initWithName:name address:address coordinate:coordinate];
+        annotation.annotationTag = [[self.resultsController indexPathForObject:restaurantObject] row];
+        [self.restaurantsMapView addAnnotation:annotation];
+    }
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    
+    static NSString *identifier = @"RentAnnotation";
+    if ([annotation isKindOfClass:[RestourantAnnotation class]]) {
+        
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.restaurantsMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (annotationView == nil) {
+            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        } else {
+            annotationView.annotation = annotation;
+        }
+        
+        annotationView.enabled = YES;
+        annotationView.canShowCallout = YES;
+        annotationView.tag = ((RestourantAnnotation *)annotation).annotationTag;
+        UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        annotationView.rightCalloutAccessoryView = detailButton;
+        
+        annotationView.pinColor = MKPinAnnotationColorPurple;
+        
+        return annotationView;
+    }
+    
+    return nil;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    
+//    DetailViewController *detailVC = [[DetailViewController alloc] init];
+//    // TODO: Provide Data
+//    detailVC.placeObject = [self.resultsController objectAtIndexPath:[NSIndexPath indexPathForRow:view.tag inSection:0]];
+//    [self.navigationController pushViewController:detailVC animated:YES];
+}
+
 @end
