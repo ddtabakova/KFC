@@ -24,5 +24,7 @@
 @dynamic workingTime;
 @dynamic restaurantToCity;
 @dynamic restaurantToImage;
+@dynamic lat;
+@dynamic lon;
 
 @end

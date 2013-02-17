@@ -24,6 +24,8 @@
 @property (nonatomic, retain) NSString * workingTime;
 @property (nonatomic, retain) NSSet *restaurantToCity;
 @property (nonatomic, retain) NSSet *restaurantToImage;
+@property (nonatomic, retain) NSNumber * lat;
+@property (nonatomic, retain) NSNumber * lon;
 @end
 
 @interface Restaurant (CoreDataGeneratedAccessors)

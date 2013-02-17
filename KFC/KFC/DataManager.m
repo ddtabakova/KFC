@@ -526,6 +526,8 @@ static NSUInteger currentNumberOfTracks;
     r1.hasKidsLanding = [NSNumber numberWithBool:NO];
     r1.hasKidsParties = [NSNumber numberWithBool:NO];
     r1.hasParking = [NSNumber numberWithBool:YES];
+    r1.lat = [NSNumber numberWithFloat:42.697458];
+    r1.lon = [NSNumber numberWithFloat:23.318095];
     [r1 addRestaurantToCityObject:c1];
     
     Restaurant *r2 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -538,6 +540,8 @@ static NSUInteger currentNumberOfTracks;
     r2.hasKidsLanding = [NSNumber numberWithBool:NO];
     r2.hasKidsParties = [NSNumber numberWithBool:NO];
     r2.hasParking = [NSNumber numberWithBool:NO];
+              r2.lat = [NSNumber numberWithFloat:42.693829];
+              r2.lon = [NSNumber numberWithFloat:23.322381];
     [r2 addRestaurantToCityObject:c1];
 
     Restaurant *r3 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -550,6 +554,8 @@ static NSUInteger currentNumberOfTracks;
     r3.hasKidsLanding = [NSNumber numberWithBool:NO];
     r3.hasKidsParties = [NSNumber numberWithBool:YES];
     r3.hasParking = [NSNumber numberWithBool:NO];
+              r3.lat = [NSNumber numberWithFloat:42.704413];
+              r3.lon = [NSNumber numberWithFloat:23.324436];
     [r3 addRestaurantToCityObject:c1];
 
     Restaurant *r4 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -562,6 +568,8 @@ static NSUInteger currentNumberOfTracks;
     r4.hasKidsLanding = [NSNumber numberWithBool:YES];
     r4.hasKidsParties = [NSNumber numberWithBool:YES];
     r4.hasParking = [NSNumber numberWithBool:YES];
+              r4.lat = [NSNumber numberWithFloat:42.715142];
+              r4.lon = [NSNumber numberWithFloat:23.252907];
     [r4 addRestaurantToCityObject:c1];
 
     Restaurant *r5 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -574,6 +582,8 @@ static NSUInteger currentNumberOfTracks;
     r5.hasKidsLanding = [NSNumber numberWithBool:NO];
     r5.hasKidsParties = [NSNumber numberWithBool:NO];
     r5.hasParking = [NSNumber numberWithBool:YES];
+    r5.lat = [NSNumber numberWithFloat:42.678271];
+    r5.lon = [NSNumber numberWithFloat:23.320048];
     [r5 addRestaurantToCityObject:c1];
 
     Restaurant *r6 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -586,6 +596,8 @@ static NSUInteger currentNumberOfTracks;
     r6.hasKidsLanding = [NSNumber numberWithBool:NO];
     r6.hasKidsParties = [NSNumber numberWithBool:NO];
     r6.hasParking = [NSNumber numberWithBool:YES];
+    r6.lat = [NSNumber numberWithFloat:42.626128];
+    r6.lon = [NSNumber numberWithFloat:23.376074];
     [r6 addRestaurantToCityObject:c1];
     
     Restaurant *r7 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -598,6 +610,8 @@ static NSUInteger currentNumberOfTracks;
     r7.hasKidsLanding = [NSNumber numberWithBool:NO];
     r7.hasKidsParties = [NSNumber numberWithBool:YES];
     r7.hasParking = [NSNumber numberWithBool:NO];
+    r7.lat = [NSNumber numberWithFloat:42.65458];
+    r7.lon = [NSNumber numberWithFloat:23.370634];
     [r7 addRestaurantToCityObject:c1];
 
     Restaurant *r8 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -610,6 +624,8 @@ static NSUInteger currentNumberOfTracks;
     r8.hasKidsLanding = [NSNumber numberWithBool:NO];
     r8.hasKidsParties = [NSNumber numberWithBool:NO];
     r8.hasParking = [NSNumber numberWithBool:YES];
+    r8.lat = [NSNumber numberWithFloat:42.691911];
+    r8.lon = [NSNumber numberWithFloat:23.354487];
     [r8 addRestaurantToCityObject:c1];
 
     Restaurant *r9 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
@@ -622,6 +638,8 @@ static NSUInteger currentNumberOfTracks;
     r9.hasKidsLanding = [NSNumber numberWithBool:NO];
     r9.hasKidsParties = [NSNumber numberWithBool:NO];
     r9.hasParking = [NSNumber numberWithBool:YES];
+    r9.lat = [NSNumber numberWithFloat:42.663859];
+    r9.lon = [NSNumber numberWithFloat:23.378778];
     [r9 addRestaurantToCityObject:c1];
     
     [c1 addCityToRestaurant:[NSSet setWithObjects:r1, r2, r3, r4, r5, r6, r7, r8, r9, nil]];
@@ -640,6 +658,8 @@ static NSUInteger currentNumberOfTracks;
     r10.hasKidsLanding = [NSNumber numberWithBool:NO];
     r10.hasKidsParties = [NSNumber numberWithBool:NO];
     r10.hasParking = [NSNumber numberWithBool:YES];
+    r10.lat = [NSNumber numberWithFloat:42.141506];
+    r10.lon = [NSNumber numberWithFloat:24.718831];
     [r10 addRestaurantToCityObject:c2];
     
     [c2 addCityToRestaurant:[NSSet setWithObject:r10]];
@@ -658,6 +678,8 @@ static NSUInteger currentNumberOfTracks;
     r11.hasKidsLanding = [NSNumber numberWithBool:NO];
     r11.hasKidsParties = [NSNumber numberWithBool:NO];
     r11.hasParking = [NSNumber numberWithBool:YES];
+    r11.lat = [NSNumber numberWithFloat:42.624636];
+    r11.lon = [NSNumber numberWithFloat:25.396818];
     [r11 addRestaurantToCityObject:c3];
     
     [c3 addCityToRestaurant:[NSSet setWithObject:r11]];
@@ -676,6 +698,8 @@ static NSUInteger currentNumberOfTracks;
     r12.hasKidsLanding = [NSNumber numberWithBool:NO];
     r12.hasKidsParties = [NSNumber numberWithBool:NO];
     r12.hasParking = [NSNumber numberWithBool:YES];
+    r12.lat = [NSNumber numberWithFloat:42.530362];
+    r12.lon = [NSNumber numberWithFloat:27.457945];
     [r12 addRestaurantToCityObject:c4];
     
     [c4 addCityToRestaurant:[NSSet setWithObject:r12]];
@@ -694,6 +718,8 @@ static NSUInteger currentNumberOfTracks;
     r13.hasKidsLanding = [NSNumber numberWithBool:NO];
     r13.hasKidsParties = [NSNumber numberWithBool:NO];
     r13.hasParking = [NSNumber numberWithBool:NO];
+    r13.lat = [NSNumber numberWithFloat:42.695337];
+    r13.lon = [NSNumber numberWithFloat:27.710352];
     [r13 addRestaurantToCityObject:c5];
     
     [c5 addCityToRestaurant:[NSSet setWithObject:r13]];
