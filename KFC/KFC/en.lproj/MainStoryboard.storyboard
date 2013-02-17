@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Qv7-nY-wLv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Qv7-nY-wLv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -34,33 +34,48 @@
             </objects>
             <point key="canvasLocation" x="1068" y="916"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurants Map View Controller-->
         <scene sceneID="kbb-Td-hkP">
             <objects>
-                <viewController id="4Jz-j1-4u1" sceneMemberID="viewController">
+                <viewController id="4Jz-j1-4u1" customClass="KFCRestaurantsMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bH5-b3-FNi">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="C75-VZ-Skv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="IXW-it-Eyw"/>
+                    <navigationItem key="navigationItem" id="xmY-mk-RSa">
+                        <barButtonItem key="rightBarButtonItem" title="List" id="VCC-gl-uRE">
+                            <connections>
+                                <action selector="showListAction:" destination="4Jz-j1-4u1" id="Sat-Z7-Fan"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="restaurantsMapView" destination="C75-VZ-Skv" id="lk3-8w-yEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuu-Cr-pEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="-432"/>
+            <point key="canvasLocation" x="1594" y="-432"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0ga-KB-Fhh">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="Qv7-nY-wLv" customClass="KFCTabBarController" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="DHA-cE-5cA">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4Jz-j1-4u1" kind="relationship" relationship="viewControllers" id="qnU-zB-ema"/>
+                        <segue destination="ugg-3c-SMx" kind="relationship" relationship="viewControllers" id="qnU-zB-ema"/>
                         <segue destination="cnx-fu-J92" kind="relationship" relationship="viewControllers" id="GJY-RP-YUe"/>
                         <segue destination="M1h-wc-iVU" kind="relationship" relationship="viewControllers" id="r9T-hI-g0S"/>
                     </connections>
@@ -69,8 +84,34 @@
             </objects>
             <point key="canvasLocation" x="346" y="155"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gYr-t2-YH0">
+            <objects>
+                <navigationController id="ugg-3c-SMx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="IXW-it-Eyw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2HU-7F-E6D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Jz-j1-4u1" kind="relationship" relationship="rootViewController" id="XPH-u4-4L9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQU-o3-zCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="-432"/>
+        </scene>
     </scenes>
     <classes>
+        <class className="KFCRestaurantsMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsMapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showListAction:"/>
+                <relationship kind="outlet" name="restaurantsMapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
         <class className="KFCTabBarController" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCTabBarController.h"/>
         </class>
