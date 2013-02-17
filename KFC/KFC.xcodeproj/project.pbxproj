@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9364947616D11A7E00F265DF /* KFCRestaurantsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */; };
 		9364947816D11AE600F265DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9364947716D11AE600F265DF /* MapKit.framework */; };
+		9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947A16D1401C00F265DF /* RestourantAnnotation.m */; };
 		C7998A3516CD1A3100729FE3 /* KFCDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7998A3316CD1A3100729FE3 /* KFCDataModel.xcdatamodeld */; };
 		C7998A3C16CD208600729FE3 /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A3B16CD208600729FE3 /* Type.m */; };
 		C7998A6D16CD20F300729FE3 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7998A6C16CD20F300729FE3 /* DataManager.m */; };
@@ -38,6 +39,8 @@
 		9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsMapViewController.h; sourceTree = "<group>"; };
 		9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsMapViewController.m; sourceTree = "<group>"; };
 		9364947716D11AE600F265DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9364947916D1401C00F265DF /* RestourantAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestourantAnnotation.h; sourceTree = "<group>"; };
+		9364947A16D1401C00F265DF /* RestourantAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestourantAnnotation.m; sourceTree = "<group>"; };
 		C7998A3416CD1A3100729FE3 /* KFCDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFCDataModel.xcdatamodel; sourceTree = "<group>"; };
 		C7998A3A16CD208600729FE3 /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type.h; sourceTree = "<group>"; };
 		C7998A3B16CD208600729FE3 /* Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type.m; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 			children = (
 				C7A19F6816CBC09000CE9CEE /* AppDelegate.h */,
 				C7A19F6916CBC09000CE9CEE /* AppDelegate.m */,
+				9364947916D1401C00F265DF /* RestourantAnnotation.h */,
+				9364947A16D1401C00F265DF /* RestourantAnnotation.m */,
 				C7A19F7116CBC09000CE9CEE /* MainStoryboard.storyboard */,
 				C79CB10316CE7F9A00771DBA /* KFCTabBarController.h */,
 				C79CB10416CE7F9A00771DBA /* KFCTabBarController.m */,
@@ -278,6 +283,7 @@
 				C7998A9A16CD567000729FE3 /* City.m in Sources */,
 				C79CB10516CE7F9A00771DBA /* KFCTabBarController.m in Sources */,
 				9364947616D11A7E00F265DF /* KFCRestaurantsMapViewController.m in Sources */,
+				9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

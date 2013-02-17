@@ -193,7 +193,7 @@ static NSUInteger currentNumberOfTracks;
     m11.price = [NSNumber numberWithDouble:1.1];
     m11.image = @"m11.png";
     [m11 addMenuToTypeObject:t2];
-
+    
     Menu *m12 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m12.name = @"";
     m12.desc = @"";
@@ -282,14 +282,14 @@ static NSUInteger currentNumberOfTracks;
     m23.price = [NSNumber numberWithDouble:1.1];
     m23.image = @"m23.png";
     [m23 addMenuToTypeObject:t4];
-
+    
     Menu *m24 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m24.name = @"Градинарска салата";
     m24.desc = @"Свеж микс от салата айсберг, домати, краставици и сладко-млечна царевица. (270 гр.)";
     m24.price = [NSNumber numberWithDouble:1.1];
     m24.image = @"m24.png";
     [m24 addMenuToTypeObject:t4];
-
+    
     Menu *m25 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m25.name = @"Шейк салата";
     m25.desc = @"Прясна салата и микс от зеленчуци, предлагани в по-малък размер. Вкусно допълнение към всяко ваше меню. 160 гр.";
@@ -298,7 +298,7 @@ static NSUInteger currentNumberOfTracks;
     [m25 addMenuToTypeObject:t4];
     
     [t4 addTypeToMenu:[NSSet setWithObjects:m22, m23, m24, m25, nil]];
-
+    
     //drinks
     Type *t5 = [NSEntityDescription insertNewObjectForEntityForName:@"Type" inManagedObjectContext:cdCtx];
     t5.name = @"Напитки";
@@ -363,35 +363,35 @@ static NSUInteger currentNumberOfTracks;
     m32.price = [NSNumber numberWithDouble:10.99];
     m32.image = @"m32.png";
     [m32 addMenuToTypeObject:t7];
-
+    
     Menu *m33 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m33.name = @"Кофа 11:11";
     m33.desc = @"11 бонфилета, 11 пикантни крилца";
     m33.price = [NSNumber numberWithDouble:16.99];
     m33.image = @"m33.png";
     [m33 addMenuToTypeObject:t7];
-
+    
     Menu *m34 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m34.name = @"30 Hot";
     m34.desc = @"30 пикантни крилца, 4 соса";
     m34.price = [NSNumber numberWithDouble:19.99];
     m34.image = @"m34.png";
     [m34 addMenuToTypeObject:t7];
-
+    
     Menu *m35 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m35.name = @"20 Crispy";
     m35.desc = @"20 бонфилета, 4 соса";
     m35.price = [NSNumber numberWithDouble:19.99];
     m35.image = @"m35.png";
     [m35 addMenuToTypeObject:t7];
-
+    
     Menu *m36 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m36.name = @"Bucket Mix";
     m36.desc = @"8 п.пиле, 16 пик.крилца";
     m36.price = [NSNumber numberWithDouble:24.99];
     m36.image = @"m36.png";
     [m36 addMenuToTypeObject:t7];
-
+    
     Menu *m37 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m37.name = @"Picnic Bucket";
     m37.desc = @"8 п.пиле, 8 бонфилета, 8 пик.крилца";
@@ -400,7 +400,7 @@ static NSUInteger currentNumberOfTracks;
     [m37 addMenuToTypeObject:t7];
     
     [t7 addTypeToMenu:[NSSet setWithObjects:m31, m32, m33, m34, m35, m36, m37, nil]];
-
+    
     //combos
     Type *t8 = [NSEntityDescription insertNewObjectForEntityForName:@"Type" inManagedObjectContext:cdCtx];
     t8.name = @"Комбинирани менюта";
@@ -418,56 +418,56 @@ static NSUInteger currentNumberOfTracks;
     m39.price = [NSNumber numberWithDouble:1.1];
     m39.image = @"m39.png";
     [m39 addMenuToTypeObject:t8];
-
+    
     Menu *m40 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m40.name = @"Меню 8 Крила";
     m40.desc = @"8 пикантни крилца, малко картофено пюре и малка салата колсло.";
     m40.price = [NSNumber numberWithDouble:1.1];
     m40.image = @"m40.png";
     [m40 addMenuToTypeObject:t8];
-
+    
     Menu *m41 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m41.name = @"Бургер меню";
     m41.desc = @"Филебургер или Зингер, малко картофено пюре, Pepsi 330 ml.";
     m41.price = [NSNumber numberWithDouble:1.1];
     m41.image = @"m41.png";
     [m41 addMenuToTypeObject:t8];
-
+    
     Menu *m42 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m42.name = @"Tower меню";
     m42.desc = @"Тауър бургер, малко картофено пюре, Pepsi 330 ml.";
     m42.price = [NSNumber numberWithDouble:1.1];
     m42.image = @"m42.png";
     [m42 addMenuToTypeObject:t8];
-
+    
     Menu *m43 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m43.name = @"Меню 2 парчета пиле";
     m43.desc = @"2 парчета пиле, малко картофено пюре, малка салата колсло";
     m43.price = [NSNumber numberWithDouble:1.1];
     m43.image = @"m43.png";
     [m43 addMenuToTypeObject:t8];
-
+    
     Menu *m44 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m44.name = @"Меню 2 парчета пиле и 2 крилца";
     m44.desc = @"2 парчета пиле, 2 пикантни крилца, малко картофено пюре, малка салата колсло";
     m44.price = [NSNumber numberWithDouble:1.1];
     m44.image = @"m44.png";
     [m44 addMenuToTypeObject:t8];
-
+    
     Menu *m45 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m45.name = @"3 Бонфиле меню";
     m45.desc = @"3 бонфилета, малко картофено пюре, малка салата колсло";
     m45.price = [NSNumber numberWithDouble:1.1];
     m45.image = @"m45.png";
     [m45 addMenuToTypeObject:t8];
-
+    
     Menu *m46 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m46.name = @"5 Бонфиле меню";
     m46.desc = @"5 бонфилета, малко картофено пюре, малка салата колсло";
     m46.price = [NSNumber numberWithDouble:1.1];
     m46.image = @"m46.png";
     [m46 addMenuToTypeObject:t8];
-
+    
     Menu *m47 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m47.name = @"8 Бонфиле меню";
     m47.desc = @"8 бонфилета, малко картофено пюре, малка салата колсло";
@@ -476,7 +476,7 @@ static NSUInteger currentNumberOfTracks;
     [m47 addMenuToTypeObject:t8];
     
     [t8 addTypeToMenu:[NSSet setWithObjects:m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, nil]];
-
+    
     //take aways
     Type *t9 = [NSEntityDescription insertNewObjectForEntityForName:@"Type" inManagedObjectContext:cdCtx];
     t9.name = @"Take Away Box Meals";
@@ -494,14 +494,14 @@ static NSUInteger currentNumberOfTracks;
     m49.price = [NSNumber numberWithDouble:1.1];
     m49.image = @"m49.png";
     [m49 addMenuToTypeObject:t9];
-
+    
     Menu *m50 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m50.name = @"Zinger Burger Box Meal";
     m50.desc = @"Зингер, парче пиле, голямо картофено пюре и малка царевица.";
     m50.price = [NSNumber numberWithDouble:1.1];
     m50.image = @"m50.png";
     [m50 addMenuToTypeObject:t9];
-
+    
     Menu *m51 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m51.name = @"Tower Burger Box Meal";
     m51.desc = @"Тауър, парче пиле, голямо картофено пюре и малка царевица.";
@@ -540,10 +540,10 @@ static NSUInteger currentNumberOfTracks;
     r2.hasKidsLanding = [NSNumber numberWithBool:NO];
     r2.hasKidsParties = [NSNumber numberWithBool:NO];
     r2.hasParking = [NSNumber numberWithBool:NO];
-              r2.lat = [NSNumber numberWithFloat:42.693829];
-              r2.lon = [NSNumber numberWithFloat:23.322381];
+    r2.lat = [NSNumber numberWithFloat:42.693829];
+    r2.lon = [NSNumber numberWithFloat:23.322381];
     [r2 addRestaurantToCityObject:c1];
-
+    
     Restaurant *r3 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
     r3.name = @"KFC Лъвов мост";
     r3.address = @"Площад „Лъвов мост”, булевард „Сливница”, 172";
@@ -554,10 +554,10 @@ static NSUInteger currentNumberOfTracks;
     r3.hasKidsLanding = [NSNumber numberWithBool:NO];
     r3.hasKidsParties = [NSNumber numberWithBool:YES];
     r3.hasParking = [NSNumber numberWithBool:NO];
-              r3.lat = [NSNumber numberWithFloat:42.704413];
-              r3.lon = [NSNumber numberWithFloat:23.324436];
+    r3.lat = [NSNumber numberWithFloat:42.704413];
+    r3.lon = [NSNumber numberWithFloat:23.324436];
     [r3 addRestaurantToCityObject:c1];
-
+    
     Restaurant *r4 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
     r4.name = @"KFC Люлин";
     r4.address = @"Люлин VІІ микрорайон, булевард „Джавахарлал Неру”";
@@ -568,10 +568,10 @@ static NSUInteger currentNumberOfTracks;
     r4.hasKidsLanding = [NSNumber numberWithBool:YES];
     r4.hasKidsParties = [NSNumber numberWithBool:YES];
     r4.hasParking = [NSNumber numberWithBool:YES];
-              r4.lat = [NSNumber numberWithFloat:42.715142];
-              r4.lon = [NSNumber numberWithFloat:23.252907];
+    r4.lat = [NSNumber numberWithFloat:42.715142];
+    r4.lon = [NSNumber numberWithFloat:23.252907];
     [r4 addRestaurantToCityObject:c1];
-
+    
     Restaurant *r5 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
     r5.name = @"KFC CCS";
     r5.address = @"Булевард „Арсеналски”, City Center Sofia, етаж 3";
@@ -585,7 +585,7 @@ static NSUInteger currentNumberOfTracks;
     r5.lat = [NSNumber numberWithFloat:42.678271];
     r5.lon = [NSNumber numberWithFloat:23.320048];
     [r5 addRestaurantToCityObject:c1];
-
+    
     Restaurant *r6 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
     r6.name = @"KFC Арена Младост";
     r6.address = @"Бизнес Парк, Младост 4ри, ет. 2 /food court/";
@@ -613,7 +613,7 @@ static NSUInteger currentNumberOfTracks;
     r7.lat = [NSNumber numberWithFloat:42.65458];
     r7.lon = [NSNumber numberWithFloat:23.370634];
     [r7 addRestaurantToCityObject:c1];
-
+    
     Restaurant *r8 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
     r8.name = @"KFC Сердика център";
     r8.address = @"Булевард Ситняково, 48, Сердика център, етаж 2ри";
@@ -627,7 +627,7 @@ static NSUInteger currentNumberOfTracks;
     r8.lat = [NSNumber numberWithFloat:42.691911];
     r8.lon = [NSNumber numberWithFloat:23.354487];
     [r8 addRestaurantToCityObject:c1];
-
+    
     Restaurant *r9 = [NSEntityDescription insertNewObjectForEntityForName:@"Restaurant" inManagedObjectContext:cdCtx];
     r9.name = @"KFC The Mall";
     r9.address = @"Булевард Цариградско шосе, 115, The Mall, food court";
@@ -643,7 +643,7 @@ static NSUInteger currentNumberOfTracks;
     [r9 addRestaurantToCityObject:c1];
     
     [c1 addCityToRestaurant:[NSSet setWithObjects:r1, r2, r3, r4, r5, r6, r7, r8, r9, nil]];
-
+    
     //Plovdiv
     City *c2 = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:cdCtx];
     c2.name = @"Пловдив";

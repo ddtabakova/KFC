@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface KFCRestaurantsMapViewController : UIViewController
+
+@interface KFCRestaurantsMapViewController : UIViewController <MKMapViewDelegate, NSFetchedResultsControllerDelegate>
+
+@property (nonatomic, strong) NSFetchedResultsController* resultsController;
 
 @end

@@ -17,7 +17,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAq-Ct-eqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="247"/>
+            <point key="canvasLocation" x="1068" y="199"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ugP-eS-H9F">
@@ -42,7 +42,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="C75-VZ-Skv">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="C75-VZ-Skv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
@@ -104,18 +104,6 @@
             <point key="canvasLocation" x="1068" y="-432"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="KFCRestaurantsMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsMapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showListAction:"/>
-                <relationship kind="outlet" name="restaurantsMapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="KFCTabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCTabBarController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -38,4 +38,17 @@
 
 - (IBAction)showListAction:(id)sender {
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    
+    //center the map on bulgaria
+    CLLocationCoordinate2D centerCoordinate;
+    centerCoordinate.latitude = 42.60162;
+    centerCoordinate.longitude = 25.125732;
+    CGFloat zoomScale = 400000.0;
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(centerCoordinate, zoomScale, zoomScale);
+    MKCoordinateRegion adjustedRegion = [self.restaurantsMapView regionThatFits:viewRegion];
+    [self.restaurantsMapView setRegion:adjustedRegion animated:YES];
+}
 @end
