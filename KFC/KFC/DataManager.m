@@ -113,28 +113,28 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m1 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m1.name = @"Пиле Оригинална рецепта";
     m1.desc = @"100% сочно пилешко месо, готвено под налягане. Тайната на вкуса е в оригиналната рецепта от 11 билки и подправки. (гърди - мин. 130 гр., кълка/цяло крило - мин. 70 гр., бут - мин. 115 гр, филе - мин.115 гр.)";
-    m1.price = [NSNumber numberWithDouble:1.1];
+    m1.price = [NSNumber numberWithDouble:3.98];
     m1.image = @"m1.png";
     [m1 addMenuToTypeObject:t1];
     
     Menu *m2 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m2.name = @"Пикантни крилца";
     m2.desc = @"Хрупкави и сочни, мариновани по специална пикантна рецепта. (3 крилца 75гр., 5 крилца 125 гр, 8 крилца 200)";
-    m2.price = [NSNumber numberWithDouble:1.1];
+    m2.price = [NSNumber numberWithDouble:3.19];
     m2.image = @"m2.png";
     [m2 addMenuToTypeObject:t1];
     
     Menu *m3 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m3.name = @"Бонфиле";
     m3.desc = @"100% сочно бяло, пилешко месо. Приготвено по оригиналата рецепта на KFC, със сос по избор – майонеза, кетчуп или барбекю (BBQ). (3 бонфилета – 85g, 5 бонфилета – 135g, 8 бонфилета – 210g)";
-    m3.price = [NSNumber numberWithDouble:1.1];
+    m3.price = [NSNumber numberWithDouble:3.98];
     m3.image = @"m3.png";
     [m3 addMenuToTypeObject:t1];
     
     Menu *m4 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m4.name = @"Пикантно пиле";
     m4.desc = @"Хрупкаво и сочно пиле в пикантна панировка. (кълка мин 70 гр., бут. мин 115 гр.)";
-    m4.price = [NSNumber numberWithDouble:1.1];
+    m4.price = [NSNumber numberWithDouble:3.99];
     m4.image = @"m4.png";
     [m4 addMenuToTypeObject:t1];
     
