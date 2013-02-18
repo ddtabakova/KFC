@@ -65,6 +65,26 @@
 
 #pragma mark - UITableViewDelegate methods
 
+- (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(.0f, .0f, 320.f, 30.f)];
+    [bg setBackgroundColor:UIColor.clearColor];
+    return bg;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(.0f, .0f, 320.f, 10.f)];
+    [bg setBackgroundColor:UIColor.clearColor];
+    return bg;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 30.f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 10.f;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100.f;
 }

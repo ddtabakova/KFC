@@ -141,7 +141,7 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m5 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m5.name = @"Пикантно бонфиле";
     m5.desc = @"100% сочно бяло, пилешко месо. Мариновано по специална рецепта в пикантна марината, със сос по избор – майонеза, кетчуп или барбекю (BBQ). (3 бонфилета – 85g, 5 бонфилета – 135g, 8 бонфилета – 210g)";
-    m5.price = [NSNumber numberWithDouble:1.1];
+    m5.price = [NSNumber numberWithDouble:3.99];
     m5.image = @"m5.png";
     [m5 addMenuToTypeObject:t1];
     
@@ -154,56 +154,56 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m6 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m6.name = @"Bonburger";
     m6.desc = @"Сочно бонфиле, майонеза, хрупкава салата и хлебче. Бонбургер предлага така неповторимия KFC вкус на специална цена.";
-    m6.price = [NSNumber numberWithDouble:1.1];
+    m6.price = [NSNumber numberWithDouble:2.99];
     m6.image = @"m6.png";
     [m6 addMenuToTypeObject:t2];
     
     Menu *m7 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m7.name = @"Fillet Burger";
     m7.desc = @"Направен от 100% сочно пилешко филе, винаги прясно приготвен по оригиналната рецепта от 11 билки и подправки, хрупкава салата, лек майонезен сос и хлебче по оригинална рецепта.";
-    m7.price = [NSNumber numberWithDouble:1.1];
+    m7.price = [NSNumber numberWithDouble:3.99];
     m7.image = @"m7.png";
     [m7 addMenuToTypeObject:t2];
     
     Menu *m8 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m8.name = @"Боксмастър";
     m8.desc = @"Сочно пилешко филе, картофено кюфте, сирене чедър, свежи домати, салата, лек майонезен сос: всичко във вкусна тортила...повече от 300 гр удоволствие!";
-    m8.price = [NSNumber numberWithDouble:1.1];
+    m8.price = [NSNumber numberWithDouble:4.99];
     m8.image = @"m8.png";
     [m8 addMenuToTypeObject:t2];
     
     Menu *m9 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m9.name = @"Zinger";
     m9.desc = @"100% сочно пилешко филе, мариновано в специалната ни пикантна панировка, прави вкуса на Зингера неустоим, хрупкава салата, лек майонезен сос и хлебче.";
-    m9.price = [NSNumber numberWithDouble:1.1];
+    m9.price = [NSNumber numberWithDouble:3.99];
     m9.image = @"m9.png";
     [m9 addMenuToTypeObject:t2];
     
     Menu *m10 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m10.name = @"Toasted Twister";
     m10.desc = @"Свежа салата, пресни домати, сочно пилешко бонфиле, лек майонезен сос, и всичко това завито във вкусна тортила и запечено на грил. Изключително удобен начин да се насладиш на KFC вкуса.";
-    m10.price = [NSNumber numberWithDouble:1.1];
+    m10.price = [NSNumber numberWithDouble:3.99];
     m10.image = @"m10.png";
     [m10 addMenuToTypeObject:t2];
     
     Menu *m11 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m11.name = @"Zinger Toasted Twister";
     m11.desc = @"Свежа салата, пресни домати, сочно пилешко бонфиле мариновано по специална пикантна рецепта, вкусна тортила и всичко запечено на грил. Пикантен и различен.";
-    m11.price = [NSNumber numberWithDouble:1.1];
+    m11.price = [NSNumber numberWithDouble:3.99];
     m11.image = @"m11.png";
     [m11 addMenuToTypeObject:t2];
     
     Menu *m13 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m13.name = @"Tower";
     m13.desc = @"Пухкаво сусамено хлебче, лек майонезен сос, салата, вкусно картофено кюфте, сирене ементал, кетчуп и 100% пилешко филе, приготвено по оригиналната KFC рецепта от 11 билки и подправки.";
-    m13.price = [NSNumber numberWithDouble:1.1];
+    m13.price = [NSNumber numberWithDouble:4.99];
     m13.image = @"m13.png";
     [m13 addMenuToTypeObject:t2];
     
     Menu *m14 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m14.name = @"Zinger Tower";
     m14.desc = @"Пухкаво сусамено хлебче, лек майонезен сос, салата, вкусно картофено кюфте, сирене ементал, кетчуп и 100% пилешко филе мариновано в специална пикантна панировка.";
-    m14.price = [NSNumber numberWithDouble:1.1];
+    m14.price = [NSNumber numberWithDouble:4.99];
     m14.image = @"m14.png";
     [m14 addMenuToTypeObject:t2];
     
@@ -216,42 +216,42 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m16 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m16.name = @"Пържени картофки";
     m16.desc = @"Леко посолени, хрупкави и винаги топли, пържените картофки в KFC се предлагат в два размера: средни и големи. (средни-115g, големи-145g)";
-    m16.price = [NSNumber numberWithDouble:1.1];
+    m16.price = [NSNumber numberWithDouble:0.99];
     m16.image = @"m16.png";
     [m16 addMenuToTypeObject:t3];
     
     Menu *m17 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m17.name = @"Картофено пюре";
     m17.desc = @"Вкусно картофено пюре и сос от грейви. Вървят ръка за ръка като Полковника и KFC. (малко – 100гр, голямо – 200гр)";
-    m17.price = [NSNumber numberWithDouble:1.1];
+    m17.price = [NSNumber numberWithDouble:0.99];
     m17.image = @"m17.png";
     [m17 addMenuToTypeObject:t3];
     
     Menu *m18 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m18.name = @"Царевица";
     m18.desc = @"Царевицата в KFC е специален сорт сладка американска царевица, прочута със жълтия си цвят и млечния си вкус. След варене, ние в KFC я потапяме в масло, за да подчертаем нейния сладък и млечен вкус. (малка – 3”, голяма – 5,5”)";
-    m18.price = [NSNumber numberWithDouble:1.1];
+    m18.price = [NSNumber numberWithDouble:0.99];
     m18.image = @"m18.png";
     [m18 addMenuToTypeObject:t3];
     
     Menu *m19 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m19.name = @"Пикантни картофки";
     m19.desc = @"При приготвянето на пикантните картофки в KFC ние използваме специално подбрани подправки и билки, които придават така специфичният им вкус и ги правят чудесно допълнение към всяко KFC меню. (150 гр.)";
-    m19.price = [NSNumber numberWithDouble:1.1];
+    m19.price = [NSNumber numberWithDouble:2.69];
     m19.image = @"m19.png";
     [m19 addMenuToTypeObject:t3];
     
     Menu *m20 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m20.name = @"Салата Снежанка";
     m20.desc = @"Краставици, прясно изцедено кисело мляко, копър, чесън. (малка 90 гр., голяма 185 гр.)";
-    m20.price = [NSNumber numberWithDouble:1.1];
+    m20.price = [NSNumber numberWithDouble:1.49];
     m20.image = @"m20.png";
     [m20 addMenuToTypeObject:t3];
     
     Menu *m21 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m21.name = @"Салата Колсло";
     m21.desc = @"Зеле, моркови, лук и вкусен специален салатен сос, правят салата колсло един от най-популярните KFC продукти. (малка - 90g, голяма – 185g)";
-    m21.price = [NSNumber numberWithDouble:1.1];
+    m21.price = [NSNumber numberWithDouble:1.49];
     m21.image = @"m21.png";
     [m21 addMenuToTypeObject:t3];
     
@@ -264,28 +264,28 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m22 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m22.name = @"Салата Цезар Оригинална рецепта";
     m22.desc = @"Свежа Айсберг салата и топли пилешки филенца с уникалния KFC вкус, домати и крутони, гарнирани със сирене пармезан и сос. (280 гр.)";
-    m22.price = [NSNumber numberWithDouble:1.1];
+    m22.price = [NSNumber numberWithDouble:6.39];
     m22.image = @"m22.png";
     [m22 addMenuToTypeObject:t4];
     
     Menu *m23 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m23.name = @"Зингер салата";
     m23.desc = @"Свежа салата айсберг, топли пикантни пилешки филенца, пресни домати и хрупкава тортила. (285гр.)";
-    m23.price = [NSNumber numberWithDouble:1.1];
+    m23.price = [NSNumber numberWithDouble:6.39];
     m23.image = @"m23.png";
     [m23 addMenuToTypeObject:t4];
     
     Menu *m24 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m24.name = @"Градинарска салата";
     m24.desc = @"Свеж микс от салата айсберг, домати, краставици и сладко-млечна царевица. (270 гр.)";
-    m24.price = [NSNumber numberWithDouble:1.1];
+    m24.price = [NSNumber numberWithDouble:4.99];
     m24.image = @"m24.png";
     [m24 addMenuToTypeObject:t4];
     
     Menu *m25 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m25.name = @"Шейк салата";
     m25.desc = @"Прясна салата и микс от зеленчуци, предлагани в по-малък размер. Вкусно допълнение към всяко ваше меню. 160 гр.";
-    m25.price = [NSNumber numberWithDouble:1.1];
+    m25.price = [NSNumber numberWithDouble:2.59];
     m25.image = @"m25.png";
     [m25 addMenuToTypeObject:t4];
     
@@ -298,28 +298,28 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m26 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m26.name = @"Pepsi";
     m26.desc = @"";
-    m26.price = [NSNumber numberWithDouble:1.1];
+    m26.price = [NSNumber numberWithDouble:2.39];
     m26.image = @"m26.png";
     [m26 addMenuToTypeObject:t5];
     
     Menu *m27 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m27.name = @"Pepsi 500ml";
     m27.desc = @"Бира Загорка наливна 400ml";
-    m27.price = [NSNumber numberWithDouble:1.1];
+    m27.price = [NSNumber numberWithDouble:2.69];
     m27.image = @"m27.png";
     [m27 addMenuToTypeObject:t5];
     
     Menu *m28 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m28.name = @"Бира Загорка 500ml";
     m28.desc = @"";
-    m28.price = [NSNumber numberWithDouble:1.1];
+    m28.price = [NSNumber numberWithDouble:2.69];
     m28.image = @"m28.png";
     [m28 addMenuToTypeObject:t5];
     
     Menu *m29 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m29.name = @"Бира Heineken 330 ml";
     m29.desc = @"";
-    m29.price = [NSNumber numberWithDouble:1.1];
+    m29.price = [NSNumber numberWithDouble:2.69];
     m29.image = @"m29.png";
     [m29 addMenuToTypeObject:t5];
     
@@ -332,7 +332,7 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m30 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m30.name = @"Чийзкейк";
     m30.desc = @"Приготвен по традиционна рецепта, чийзкейкът е едно от удоволствията към които можеш да се връщаш винаги: хрупкави бисквити потопени в масло, покрити с нежно крема сирене и гарнирани със сладко от боровинки. (малък – 140 гр.)";
-    m30.price = [NSNumber numberWithDouble:1.1];
+    m30.price = [NSNumber numberWithDouble:2.79];
     m30.image = @"m30.png";
     [m30 addMenuToTypeObject:t6];
     
@@ -400,70 +400,70 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m38 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m38.name = @"Меню 3 Крила";
     m38.desc = @"3 пикантни крилца, малко картофено пюре и малка салата колсло.";
-    m38.price = [NSNumber numberWithDouble:1.1];
+    m38.price = [NSNumber numberWithDouble:3.99];
     m38.image = @"m38.png";
     [m38 addMenuToTypeObject:t8];
     
     Menu *m39 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m39.name = @"Меню 5 Крила";
     m39.desc = @"5 пикантни крилца, малко картофено пюре и малка салата колсло.";
-    m39.price = [NSNumber numberWithDouble:1.1];
+    m39.price = [NSNumber numberWithDouble:5.99];
     m39.image = @"m38.png";
     [m39 addMenuToTypeObject:t8];
     
     Menu *m40 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m40.name = @"Меню 8 Крила";
     m40.desc = @"8 пикантни крилца, малко картофено пюре и малка салата колсло.";
-    m40.price = [NSNumber numberWithDouble:1.1];
+    m40.price = [NSNumber numberWithDouble:7.49];
     m40.image = @"m38.png";
     [m40 addMenuToTypeObject:t8];
     
     Menu *m41 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m41.name = @"Бургер меню";
     m41.desc = @"Филебургер или Зингер, малко картофено пюре, Pepsi 330 ml.";
-    m41.price = [NSNumber numberWithDouble:1.1];
+    m41.price = [NSNumber numberWithDouble:6.49];
     m41.image = @"m41.png";
     [m41 addMenuToTypeObject:t8];
     
     Menu *m42 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m42.name = @"Tower меню";
     m42.desc = @"Тауър бургер, малко картофено пюре, Pepsi 330 ml.";
-    m42.price = [NSNumber numberWithDouble:1.1];
+    m42.price = [NSNumber numberWithDouble:7.59];
     m42.image = @"m42.png";
     [m42 addMenuToTypeObject:t8];
     
     Menu *m43 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m43.name = @"Меню 2 парчета пиле";
     m43.desc = @"2 парчета пиле, малко картофено пюре, малка салата колсло";
-    m43.price = [NSNumber numberWithDouble:1.1];
+    m43.price = [NSNumber numberWithDouble:6.49];
     m43.image = @"m43.png";
     [m43 addMenuToTypeObject:t8];
     
     Menu *m44 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m44.name = @"Меню 2 парчета пиле и 2 крилца";
     m44.desc = @"2 парчета пиле, 2 пикантни крилца, малко картофено пюре, малка салата колсло";
-    m44.price = [NSNumber numberWithDouble:1.1];
+    m44.price = [NSNumber numberWithDouble:8.39];
     m44.image = @"m44.png";
     [m44 addMenuToTypeObject:t8];
     
     Menu *m45 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m45.name = @"3 Бонфиле меню";
     m45.desc = @"3 бонфилета, малко картофено пюре, малка салата колсло";
-    m45.price = [NSNumber numberWithDouble:1.1];
+    m45.price = [NSNumber numberWithDouble:5.99];
     m45.image = @"m45.png";
     [m45 addMenuToTypeObject:t8];
     
     Menu *m46 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m46.name = @"5 Бонфиле меню";
     m46.desc = @"5 бонфилета, малко картофено пюре, малка салата колсло";
-    m46.price = [NSNumber numberWithDouble:1.1];
+    m46.price = [NSNumber numberWithDouble:7.99];
     m46.image = @"m45.png";
     [m46 addMenuToTypeObject:t8];
     
     Menu *m47 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m47.name = @"8 Бонфиле меню";
     m47.desc = @"8 бонфилета, малко картофено пюре, малка салата колсло";
-    m47.price = [NSNumber numberWithDouble:1.1];
+    m47.price = [NSNumber numberWithDouble:10.99];
     m47.image = @"m45.png";
     [m47 addMenuToTypeObject:t8];
     
@@ -476,28 +476,28 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     Menu *m48 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m48.name = @"Chicken Box Meal";
     m48.desc = @"Парче пиле, 3 пикантни крилца, 2 бонфилета, голямо картофено пюре и малка царевица.";
-    m48.price = [NSNumber numberWithDouble:1.1];
+    m48.price = [NSNumber numberWithDouble:8.49];
     m48.image = @"m48.png";
     [m48 addMenuToTypeObject:t9];
     
     Menu *m49 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m49.name = @"Fillet Burger Box Meal";
     m49.desc = @"Филебургер, парче пиле, голямо картофено пюре и малка царевица.";
-    m49.price = [NSNumber numberWithDouble:1.1];
+    m49.price = [NSNumber numberWithDouble:8.49];
     m49.image = @"m49.png";
     [m49 addMenuToTypeObject:t9];
     
     Menu *m50 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m50.name = @"Zinger Burger Box Meal";
     m50.desc = @"Зингер, парче пиле, голямо картофено пюре и малка царевица.";
-    m50.price = [NSNumber numberWithDouble:1.1];
+    m50.price = [NSNumber numberWithDouble:8.49];
     m50.image = @"m49.png";
     [m50 addMenuToTypeObject:t9];
     
     Menu *m51 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m51.name = @"Tower Burger Box Meal";
     m51.desc = @"Тауър, парче пиле, голямо картофено пюре и малка царевица.";
-    m51.price = [NSNumber numberWithDouble:1.1];
+    m51.price = [NSNumber numberWithDouble:9.49];
     m51.image = @"m51.png";
     [m51 addMenuToTypeObject:t9];
     
