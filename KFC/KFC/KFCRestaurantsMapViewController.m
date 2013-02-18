@@ -106,8 +106,6 @@
         UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         annotationView.rightCalloutAccessoryView = detailButton;
         
-        annotationView.pinColor = MKPinAnnotationColorPurple;
-        
         return annotationView;
     }
     
@@ -116,10 +114,7 @@
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
     
-//    DetailViewController *detailVC = [[DetailViewController alloc] init];
-//    // TODO: Provide Data
-//    detailVC.placeObject = [self.resultsController objectAtIndexPath:[NSIndexPath indexPathForRow:view.tag inSection:0]];
-//    [self.navigationController pushViewController:detailVC animated:YES];
+    [self performSegueWithIdentifier:@"ShowDetailFromMap" sender:nil];
 }
 
 @end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Qv7-nY-wLv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Qv7-nY-wLv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -104,12 +104,15 @@
             <objects>
                 <viewController id="4Jz-j1-4u1" customClass="KFCRestaurantsMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bH5-b3-FNi">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="C75-VZ-Skv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4Jz-j1-4u1" id="Fm4-Qm-67f"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -119,16 +122,79 @@
                             <color key="tintColor" red="0.7803921568627451" green="0.066666666666666666" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="showListAction:" destination="4Jz-j1-4u1" id="Sat-Z7-Fan"/>
+                                <segue destination="d40-EW-cxd" kind="custom" identifier="ShowList" customClass="KFCFlipFromRightSegue" id="ing-GI-bN2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="restaurantsMapView" destination="C75-VZ-Skv" id="lk3-8w-yEZ"/>
+                        <segue destination="wri-dP-8Qg" kind="push" identifier="ShowDetailFromMap" id="Dcq-7a-xke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuu-Cr-pEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="-432"/>
+            <point key="canvasLocation" x="1568" y="-432"/>
+        </scene>
+        <!--Restaurants List View Controller-->
+        <scene sceneID="7Vo-dt-cNk">
+            <objects>
+                <viewController id="d40-EW-cxd" customClass="KFCRestaurantsListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Stx-uS-Ixk">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg@2x.png" id="GP8-tp-TFb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="drv-Hf-FxV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qss-7X-HUO">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="d40-EW-cxd" id="4Em-qU-B4B"/>
+                                    <outlet property="delegate" destination="d40-EW-cxd" id="x38-Ka-rCE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="wri-dP-8Qg" kind="push" id="1Ql-kl-8Kt"/>
+                        <segue destination="4Jz-j1-4u1" kind="custom" identifier="BackToMap" customClass="KFCFlipFromLeftSegue" id="X74-ej-6NW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rtz-Os-Mqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2067" y="-884"/>
+        </scene>
+        <!--Restaurants Detail View Controller-->
+        <scene sceneID="Tmz-5a-zPB">
+            <objects>
+                <viewController id="wri-dP-8Qg" customClass="KFCRestaurantsDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n5h-Lz-RUY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qvp-V3-MuL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7WG-ny-f5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2549" y="-432"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0ga-KB-Fhh">
@@ -186,6 +252,12 @@
         <class className="KFCNavBar" superclassName="UINavigationBar">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCNavBar.h"/>
         </class>
+        <class className="KFCRestaurantsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsDetailViewController.h"/>
+        </class>
+        <class className="KFCRestaurantsListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsListViewController.h"/>
+        </class>
         <class className="KFCRestaurantsMapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsMapViewController.h"/>
             <relationships>
@@ -202,4 +274,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dcq-7a-xke"/>
+        <segue reference="X74-ej-6NW"/>
+    </inferredMetricsTieBreakers>
 </document>

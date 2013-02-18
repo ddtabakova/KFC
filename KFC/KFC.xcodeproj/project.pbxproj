@@ -14,6 +14,10 @@
 		2E845BD316D2C232004E6CED /* KFCBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845BD216D2C232004E6CED /* KFCBackground.m */; };
 		2E845BD516D2C3A7004E6CED /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845BD416D2C3A7004E6CED /* navbar@2x.png */; };
 		2E845BD816D2C588004E6CED /* KFCMenuItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845BD716D2C588004E6CED /* KFCMenuItemsViewController.m */; };
+		933E0AEE16D2D68100686883 /* KFCRestaurantsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AED16D2D68100686883 /* KFCRestaurantsListViewController.m */; };
+		933E0AF116D2D69200686883 /* KFCRestaurantsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF016D2D69200686883 /* KFCRestaurantsDetailViewController.m */; };
+		933E0AF516D2D8F900686883 /* KFCFlipFromRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF416D2D8F900686883 /* KFCFlipFromRightSegue.m */; };
+		933E0AF816D2D92E00686883 /* KFCFlipFromLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF716D2D92E00686883 /* KFCFlipFromLeftSegue.m */; };
 		9364947616D11A7E00F265DF /* KFCRestaurantsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */; };
 		9364947816D11AE600F265DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9364947716D11AE600F265DF /* MapKit.framework */; };
 		9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947A16D1401C00F265DF /* RestourantAnnotation.m */; };
@@ -54,6 +58,14 @@
 		2E845BD416D2C3A7004E6CED /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 		2E845BD616D2C588004E6CED /* KFCMenuItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCMenuItemsViewController.h; sourceTree = "<group>"; };
 		2E845BD716D2C588004E6CED /* KFCMenuItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCMenuItemsViewController.m; sourceTree = "<group>"; };
+		933E0AEC16D2D68100686883 /* KFCRestaurantsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsListViewController.h; sourceTree = "<group>"; };
+		933E0AED16D2D68100686883 /* KFCRestaurantsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsListViewController.m; sourceTree = "<group>"; };
+		933E0AEF16D2D69200686883 /* KFCRestaurantsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsDetailViewController.h; sourceTree = "<group>"; };
+		933E0AF016D2D69200686883 /* KFCRestaurantsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsDetailViewController.m; sourceTree = "<group>"; };
+		933E0AF316D2D8F900686883 /* KFCFlipFromRightSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCFlipFromRightSegue.h; sourceTree = "<group>"; };
+		933E0AF416D2D8F900686883 /* KFCFlipFromRightSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCFlipFromRightSegue.m; sourceTree = "<group>"; };
+		933E0AF616D2D92E00686883 /* KFCFlipFromLeftSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCFlipFromLeftSegue.h; sourceTree = "<group>"; };
+		933E0AF716D2D92E00686883 /* KFCFlipFromLeftSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCFlipFromLeftSegue.m; sourceTree = "<group>"; };
 		9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsMapViewController.h; sourceTree = "<group>"; };
 		9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsMapViewController.m; sourceTree = "<group>"; };
 		9364947716D11AE600F265DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -120,6 +132,17 @@
 				2E845BD216D2C232004E6CED /* KFCBackground.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		933E0AF216D2D8A200686883 /* CustomSegue */ = {
+			isa = PBXGroup;
+			children = (
+				933E0AF316D2D8F900686883 /* KFCFlipFromRightSegue.h */,
+				933E0AF416D2D8F900686883 /* KFCFlipFromRightSegue.m */,
+				933E0AF616D2D92E00686883 /* KFCFlipFromLeftSegue.h */,
+				933E0AF716D2D92E00686883 /* KFCFlipFromLeftSegue.m */,
+			);
+			name = CustomSegue;
 			sourceTree = "<group>";
 		};
 		C7998A3116CD19FC00729FE3 /* Data Model */ = {
@@ -213,6 +236,11 @@
 				C79CB10416CE7F9A00771DBA /* KFCTabBarController.m */,
 				9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */,
 				9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */,
+				933E0AF216D2D8A200686883 /* CustomSegue */,
+				933E0AEC16D2D68100686883 /* KFCRestaurantsListViewController.h */,
+				933E0AED16D2D68100686883 /* KFCRestaurantsListViewController.m */,
+				933E0AEF16D2D69200686883 /* KFCRestaurantsDetailViewController.h */,
+				933E0AF016D2D69200686883 /* KFCRestaurantsDetailViewController.m */,
 				2E845BC116D2AA1E004E6CED /* KFCMenuViewController.h */,
 				2E845BC216D2AA1E004E6CED /* KFCMenuViewController.m */,
 				2E845BD616D2C588004E6CED /* KFCMenuItemsViewController.h */,
@@ -328,6 +356,10 @@
 				2E845BCA16D2BB62004E6CED /* KFCNavBar.m in Sources */,
 				2E845BD316D2C232004E6CED /* KFCBackground.m in Sources */,
 				2E845BD816D2C588004E6CED /* KFCMenuItemsViewController.m in Sources */,
+				933E0AEE16D2D68100686883 /* KFCRestaurantsListViewController.m in Sources */,
+				933E0AF116D2D69200686883 /* KFCRestaurantsDetailViewController.m in Sources */,
+				933E0AF516D2D8F900686883 /* KFCFlipFromRightSegue.m in Sources */,
+				933E0AF816D2D92E00686883 /* KFCFlipFromLeftSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
