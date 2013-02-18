@@ -53,6 +53,8 @@
 		2E845C8116D2E1D7004E6CED /* m49.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845C5A16D2E1D7004E6CED /* m49.png */; };
 		2E845C8216D2E1D7004E6CED /* m51.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845C5B16D2E1D7004E6CED /* m51.png */; };
 		2E845C8316D2E1D7004E6CED /* prices_2_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E845C5C16D2E1D7004E6CED /* prices_2_bg.jpg */; };
+		2E845C8716D2E316004E6CED /* KFCMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845C8616D2E316004E6CED /* KFCMenuItemCell.m */; };
+		2E845C8916D2E329004E6CED /* KFCMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E845C8816D2E329004E6CED /* KFCMenuItemCell.xib */; };
 		933E0AEE16D2D68100686883 /* KFCRestaurantsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AED16D2D68100686883 /* KFCRestaurantsListViewController.m */; };
 		933E0AF116D2D69200686883 /* KFCRestaurantsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF016D2D69200686883 /* KFCRestaurantsDetailViewController.m */; };
 		933E0AF516D2D8F900686883 /* KFCFlipFromRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF416D2D8F900686883 /* KFCFlipFromRightSegue.m */; };
@@ -136,6 +138,9 @@
 		2E845C5A16D2E1D7004E6CED /* m49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m49.png; sourceTree = "<group>"; };
 		2E845C5B16D2E1D7004E6CED /* m51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m51.png; sourceTree = "<group>"; };
 		2E845C5C16D2E1D7004E6CED /* prices_2_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prices_2_bg.jpg; sourceTree = "<group>"; };
+		2E845C8516D2E316004E6CED /* KFCMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCMenuItemCell.h; sourceTree = "<group>"; };
+		2E845C8616D2E316004E6CED /* KFCMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCMenuItemCell.m; sourceTree = "<group>"; };
+		2E845C8816D2E329004E6CED /* KFCMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFCMenuItemCell.xib; sourceTree = "<group>"; };
 		933E0AEC16D2D68100686883 /* KFCRestaurantsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsListViewController.h; sourceTree = "<group>"; };
 		933E0AED16D2D68100686883 /* KFCRestaurantsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsListViewController.m; sourceTree = "<group>"; };
 		933E0AEF16D2D69200686883 /* KFCRestaurantsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsDetailViewController.h; sourceTree = "<group>"; };
@@ -208,6 +213,9 @@
 				2E845BC916D2BB62004E6CED /* KFCNavBar.m */,
 				2E845BD116D2C232004E6CED /* KFCBackground.h */,
 				2E845BD216D2C232004E6CED /* KFCBackground.m */,
+				2E845C8516D2E316004E6CED /* KFCMenuItemCell.h */,
+				2E845C8616D2E316004E6CED /* KFCMenuItemCell.m */,
+				2E845C8816D2E329004E6CED /* KFCMenuItemCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -275,7 +283,6 @@
 				C7998A3316CD1A3100729FE3 /* KFCDataModel.xcdatamodeld */,
 				C7998A6B16CD20F300729FE3 /* DataManager.h */,
 				C7998A6C16CD20F300729FE3 /* DataManager.m */,
-				2E845C3416D2E1C5004E6CED /* Menu Images */,
 				C7998A6A16CD20D400729FE3 /* Data Objects */,
 			);
 			name = "Data Model";
@@ -304,6 +311,7 @@
 				2E845BCF16D2C20F004E6CED /* bg@2x.png */,
 				2E845BCD16D2C0C3004E6CED /* accesory.png */,
 				2E845BD416D2C3A7004E6CED /* navbar@2x.png */,
+				2E845C3416D2E1C5004E6CED /* Menu Images */,
 				C79CB0F916CE7B3900771DBA /* TabBar  */,
 			);
 			name = Images;
@@ -494,6 +502,7 @@
 				2E845C8116D2E1D7004E6CED /* m49.png in Resources */,
 				2E845C8216D2E1D7004E6CED /* m51.png in Resources */,
 				2E845C8316D2E1D7004E6CED /* prices_2_bg.jpg in Resources */,
+				2E845C8916D2E329004E6CED /* KFCMenuItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +533,7 @@
 				933E0AF116D2D69200686883 /* KFCRestaurantsDetailViewController.m in Sources */,
 				933E0AF516D2D8F900686883 /* KFCFlipFromRightSegue.m in Sources */,
 				933E0AF816D2D92E00686883 /* KFCFlipFromLeftSegue.m in Sources */,
+				2E845C8716D2E316004E6CED /* KFCMenuItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

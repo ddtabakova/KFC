@@ -8,6 +8,7 @@
 
 #import "KFCMenuItemsViewController.h"
 #import "Menu.h"
+#import "KFCMenuItemCell.h"
 
 @interface KFCMenuItemsViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -48,20 +49,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    KFCMenuItemCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"KFCMenuItemCell" owner:self options:nil];
+        cell = [topLevelObjects objectAtIndex:0];
     }
-    cell.textLabel.text = ((Menu*)[self.items objectAtIndex:indexPath.row]).name;
-    cell.textLabel.textColor = [UIColor blackColor];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
-    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"accesory.png"]];
-    cell.backgroundColor = [UIColor colorWithWhite:1.f alpha:.35f];
+    
+    cell.itemNameLabel.text = ((Menu*)[self.items objectAtIndex:indexPath.row]).name;
+    cell.itemPriceLabel.text = [NSString stringWithFormat:@"%.2fлв", ((Menu*)[self.items objectAtIndex:indexPath.row]).price.doubleValue];
+    cell.itemDescriptionLabel.text = ((Menu*)[self.items objectAtIndex:indexPath.row]).desc;
+    [cell.itemImageView setImage:[UIImage imageNamed:((Menu*)[self.items objectAtIndex:indexPath.row]).image]];
     
     return cell;
 }
 
 #pragma mark - UITableViewDelegate methods
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100.f;
+}
 
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath {
 }

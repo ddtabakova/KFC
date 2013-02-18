@@ -193,13 +193,6 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     m11.image = @"m11.png";
     [m11 addMenuToTypeObject:t2];
     
-    Menu *m12 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
-    m12.name = @"";
-    m12.desc = @"";
-    m12.price = [NSNumber numberWithDouble:1.1];
-    m12.image = @"m12.png";
-    [m12 addMenuToTypeObject:t2];
-    
     Menu *m13 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m13.name = @"Tower";
     m13.desc = @"Пухкаво сусамено хлебче, лек майонезен сос, салата, вкусно картофено кюфте, сирене ементал, кетчуп и 100% пилешко филе, приготвено по оригиналната KFC рецепта от 11 билки и подправки.";
@@ -214,7 +207,7 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     m14.image = @"m14.png";
     [m14 addMenuToTypeObject:t2];
     
-    [t2 addTypeToMenu:[NSSet setWithObjects:m6, m7, m8, m9, m10, m11, m12, m13, m14, nil]];
+    [t2 addTypeToMenu:[NSSet setWithObjects:m6, m7, m8, m9, m10, m11, m13, m14, nil]];
     
     //garnishes
     Type *t3 = [NSEntityDescription insertNewObjectForEntityForName:@"Type" inManagedObjectContext:cdCtx];
@@ -360,42 +353,42 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     m32.name = @"2 Gether Bucket HOT";
     m32.desc = @"14 крилца, 2 топли гарнитури от един вид ";
     m32.price = [NSNumber numberWithDouble:10.99];
-    m32.image = @"m32.png";
+    m32.image = @"m31.png";
     [m32 addMenuToTypeObject:t7];
     
     Menu *m33 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m33.name = @"Кофа 11:11";
     m33.desc = @"11 бонфилета, 11 пикантни крилца";
     m33.price = [NSNumber numberWithDouble:16.99];
-    m33.image = @"m33.png";
+    m33.image = @"m31.png";
     [m33 addMenuToTypeObject:t7];
     
     Menu *m34 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m34.name = @"30 Hot";
     m34.desc = @"30 пикантни крилца, 4 соса";
     m34.price = [NSNumber numberWithDouble:19.99];
-    m34.image = @"m34.png";
+    m34.image = @"m31.png";
     [m34 addMenuToTypeObject:t7];
     
     Menu *m35 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m35.name = @"20 Crispy";
     m35.desc = @"20 бонфилета, 4 соса";
     m35.price = [NSNumber numberWithDouble:19.99];
-    m35.image = @"m35.png";
+    m35.image = @"m31.png";
     [m35 addMenuToTypeObject:t7];
     
     Menu *m36 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m36.name = @"Bucket Mix";
     m36.desc = @"8 п.пиле, 16 пик.крилца";
     m36.price = [NSNumber numberWithDouble:24.99];
-    m36.image = @"m36.png";
+    m36.image = @"m31.png";
     [m36 addMenuToTypeObject:t7];
     
     Menu *m37 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m37.name = @"Picnic Bucket";
     m37.desc = @"8 п.пиле, 8 бонфилета, 8 пик.крилца";
     m37.price = [NSNumber numberWithDouble:27.99];
-    m37.image = @"m37.png";
+    m37.image = @"m31.png";
     [m37 addMenuToTypeObject:t7];
     
     [t7 addTypeToMenu:[NSSet setWithObjects:m31, m32, m33, m34, m35, m36, m37, nil]];
@@ -415,14 +408,14 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     m39.name = @"Меню 5 Крила";
     m39.desc = @"5 пикантни крилца, малко картофено пюре и малка салата колсло.";
     m39.price = [NSNumber numberWithDouble:1.1];
-    m39.image = @"m39.png";
+    m39.image = @"m38.png";
     [m39 addMenuToTypeObject:t8];
     
     Menu *m40 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m40.name = @"Меню 8 Крила";
     m40.desc = @"8 пикантни крилца, малко картофено пюре и малка салата колсло.";
     m40.price = [NSNumber numberWithDouble:1.1];
-    m40.image = @"m40.png";
+    m40.image = @"m38.png";
     [m40 addMenuToTypeObject:t8];
     
     Menu *m41 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
@@ -464,14 +457,14 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     m46.name = @"5 Бонфиле меню";
     m46.desc = @"5 бонфилета, малко картофено пюре, малка салата колсло";
     m46.price = [NSNumber numberWithDouble:1.1];
-    m46.image = @"m46.png";
+    m46.image = @"m45.png";
     [m46 addMenuToTypeObject:t8];
     
     Menu *m47 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m47.name = @"8 Бонфиле меню";
     m47.desc = @"8 бонфилета, малко картофено пюре, малка салата колсло";
     m47.price = [NSNumber numberWithDouble:1.1];
-    m47.image = @"m47.png";
+    m47.image = @"m45.png";
     [m47 addMenuToTypeObject:t8];
     
     [t8 addTypeToMenu:[NSSet setWithObjects:m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, nil]];
@@ -498,7 +491,7 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     m50.name = @"Zinger Burger Box Meal";
     m50.desc = @"Зингер, парче пиле, голямо картофено пюре и малка царевица.";
     m50.price = [NSNumber numberWithDouble:1.1];
-    m50.image = @"m50.png";
+    m50.image = @"m49.png";
     [m50 addMenuToTypeObject:t9];
     
     Menu *m51 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
