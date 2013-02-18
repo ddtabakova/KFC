@@ -20,7 +20,6 @@ static dispatch_queue_t q;
 static NSManagedObjectContext *cdCtx;
 static NSManagedObjectModel *managedObjectModel;
 static NSPersistentStoreCoordinator *persistentStoreCoordinator;
-static NSUInteger currentNumberOfTracks;
 
 + (void)initialize {
     q = dispatch_queue_create("BNDataManager Worker Queue", NULL);

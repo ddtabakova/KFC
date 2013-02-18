@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E845BC316D2AA1E004E6CED /* KFCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845BC216D2AA1E004E6CED /* KFCMenuViewController.m */; };
+		2E845BCA16D2BB62004E6CED /* KFCNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845BC916D2BB62004E6CED /* KFCNavBar.m */; };
+		2E845BCC16D2BD96004E6CED /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845BCB16D2BD96004E6CED /* navbar@2x.png */; };
 		9364947616D11A7E00F265DF /* KFCRestaurantsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */; };
 		9364947816D11AE600F265DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9364947716D11AE600F265DF /* MapKit.framework */; };
 		9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947A16D1401C00F265DF /* RestourantAnnotation.m */; };
@@ -36,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E845BC116D2AA1E004E6CED /* KFCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCMenuViewController.h; sourceTree = "<group>"; };
+		2E845BC216D2AA1E004E6CED /* KFCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCMenuViewController.m; sourceTree = "<group>"; };
+		2E845BC816D2BB62004E6CED /* KFCNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCNavBar.h; sourceTree = "<group>"; };
+		2E845BC916D2BB62004E6CED /* KFCNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCNavBar.m; sourceTree = "<group>"; };
+		2E845BCB16D2BD96004E6CED /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 		9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsMapViewController.h; sourceTree = "<group>"; };
 		9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsMapViewController.m; sourceTree = "<group>"; };
 		9364947716D11AE600F265DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -93,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E845BC716D2BB4C004E6CED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E845BC816D2BB62004E6CED /* KFCNavBar.h */,
+				2E845BC916D2BB62004E6CED /* KFCNavBar.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		C7998A3116CD19FC00729FE3 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +141,7 @@
 		C79CB0F716CE7B2E00771DBA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2E845BCB16D2BD96004E6CED /* navbar@2x.png */,
 				C79CB0F916CE7B3900771DBA /* TabBar  */,
 			);
 			name = Images;
@@ -181,6 +199,9 @@
 				C79CB10416CE7F9A00771DBA /* KFCTabBarController.m */,
 				9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */,
 				9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */,
+				2E845BC116D2AA1E004E6CED /* KFCMenuViewController.h */,
+				2E845BC216D2AA1E004E6CED /* KFCMenuViewController.m */,
+				2E845BC716D2BB4C004E6CED /* Views */,
 				C7998A3116CD19FC00729FE3 /* Data Model */,
 				C79CB0F716CE7B2E00771DBA /* Images */,
 				C7A19F6016CBC09000CE9CEE /* Supporting Files */,
@@ -262,6 +283,7 @@
 				C79CB11916CEA71E00771DBA /* kfc-tabbar-selected-2@2x.png in Resources */,
 				C79CB11A16CEA71E00771DBA /* kfc-tabbar-selected-1@2x.png in Resources */,
 				C79CB11C16CEA78300771DBA /* transparent.png in Resources */,
+				2E845BCC16D2BD96004E6CED /* navbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +306,8 @@
 				C79CB10516CE7F9A00771DBA /* KFCTabBarController.m in Sources */,
 				9364947616D11A7E00F265DF /* KFCRestaurantsMapViewController.m in Sources */,
 				9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */,
+				2E845BC316D2AA1E004E6CED /* KFCMenuViewController.m in Sources */,
+				2E845BCA16D2BB62004E6CED /* KFCNavBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
