@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		2E845BC316D2AA1E004E6CED /* KFCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845BC216D2AA1E004E6CED /* KFCMenuViewController.m */; };
 		2E845BCA16D2BB62004E6CED /* KFCNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845BC916D2BB62004E6CED /* KFCNavBar.m */; };
-		2E845BCC16D2BD96004E6CED /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845BCB16D2BD96004E6CED /* navbar@2x.png */; };
+		2E845BCE16D2C0C3004E6CED /* accesory.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845BCD16D2C0C3004E6CED /* accesory.png */; };
+		2E845BD016D2C20F004E6CED /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845BCF16D2C20F004E6CED /* bg@2x.png */; };
+		2E845BD316D2C232004E6CED /* KFCBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E845BD216D2C232004E6CED /* KFCBackground.m */; };
+		2E845BD516D2C3A7004E6CED /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E845BD416D2C3A7004E6CED /* navbar@2x.png */; };
 		9364947616D11A7E00F265DF /* KFCRestaurantsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */; };
 		9364947816D11AE600F265DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9364947716D11AE600F265DF /* MapKit.framework */; };
 		9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947A16D1401C00F265DF /* RestourantAnnotation.m */; };
@@ -43,7 +46,11 @@
 		2E845BC216D2AA1E004E6CED /* KFCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCMenuViewController.m; sourceTree = "<group>"; };
 		2E845BC816D2BB62004E6CED /* KFCNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCNavBar.h; sourceTree = "<group>"; };
 		2E845BC916D2BB62004E6CED /* KFCNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCNavBar.m; sourceTree = "<group>"; };
-		2E845BCB16D2BD96004E6CED /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
+		2E845BCD16D2C0C3004E6CED /* accesory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accesory.png; sourceTree = "<group>"; };
+		2E845BCF16D2C20F004E6CED /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		2E845BD116D2C232004E6CED /* KFCBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCBackground.h; sourceTree = "<group>"; };
+		2E845BD216D2C232004E6CED /* KFCBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCBackground.m; sourceTree = "<group>"; };
+		2E845BD416D2C3A7004E6CED /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 		9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsMapViewController.h; sourceTree = "<group>"; };
 		9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsMapViewController.m; sourceTree = "<group>"; };
 		9364947716D11AE600F265DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -106,6 +113,8 @@
 			children = (
 				2E845BC816D2BB62004E6CED /* KFCNavBar.h */,
 				2E845BC916D2BB62004E6CED /* KFCNavBar.m */,
+				2E845BD116D2C232004E6CED /* KFCBackground.h */,
+				2E845BD216D2C232004E6CED /* KFCBackground.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -141,7 +150,9 @@
 		C79CB0F716CE7B2E00771DBA /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2E845BCB16D2BD96004E6CED /* navbar@2x.png */,
+				2E845BCF16D2C20F004E6CED /* bg@2x.png */,
+				2E845BCD16D2C0C3004E6CED /* accesory.png */,
+				2E845BD416D2C3A7004E6CED /* navbar@2x.png */,
 				C79CB0F916CE7B3900771DBA /* TabBar  */,
 			);
 			name = Images;
@@ -283,7 +294,9 @@
 				C79CB11916CEA71E00771DBA /* kfc-tabbar-selected-2@2x.png in Resources */,
 				C79CB11A16CEA71E00771DBA /* kfc-tabbar-selected-1@2x.png in Resources */,
 				C79CB11C16CEA78300771DBA /* transparent.png in Resources */,
-				2E845BCC16D2BD96004E6CED /* navbar@2x.png in Resources */,
+				2E845BCE16D2C0C3004E6CED /* accesory.png in Resources */,
+				2E845BD016D2C20F004E6CED /* bg@2x.png in Resources */,
+				2E845BD516D2C3A7004E6CED /* navbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +321,7 @@
 				9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */,
 				2E845BC316D2AA1E004E6CED /* KFCMenuViewController.m in Sources */,
 				2E845BCA16D2BB62004E6CED /* KFCNavBar.m in Sources */,
+				2E845BD316D2C232004E6CED /* KFCBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

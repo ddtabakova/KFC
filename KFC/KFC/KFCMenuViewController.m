@@ -71,6 +71,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     cell.textLabel.text = ((Type*)[self.datasource objectAtIndexPath:indexPath]).name;
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"accesory.png"]];
+    cell.backgroundColor = [UIColor colorWithWhite:1.f alpha:.35f];
     
     return cell;
 }
