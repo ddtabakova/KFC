@@ -9,10 +9,12 @@
 #import "KFCMenuViewController.h"
 #import "DataManager.h"
 #import "Type.h"
+#import "KFCMenuItemsViewController.h"
 
 @interface KFCMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSFetchedResultsController *datasource;
+@property (nonatomic, strong) NSIndexPath *selectedIndexPath;
 
 @end
 
@@ -27,8 +29,7 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     NSManagedObjectContext *moc = [DataManager managedObjectContext];
@@ -54,6 +55,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"TypeItems"]) {
+        KFCMenuItemsViewController *vc = [segue destinationViewController];
+        vc.items = [NSArray arrayWithArray:((Type*)[self.datasource objectAtIndexPath:self.selectedIndexPath]).typeToMenu.allObjects];
+    }
+}
+
 #pragma mark - UITableViewDataSource methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -74,9 +82,18 @@
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"accesory.png"]];
-    cell.backgroundColor = [UIColor colorWithWhite:1.f alpha:.35f];
+    cell.backgroundColor = [UIColor colorWithWhite:1.f alpha:.38f];
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate methods
+
+- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath {
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
+    self.selectedIndexPath = indexPath;
+    [self performSegueWithIdentifier:@"TypeItems" sender:self];
 }
 
 @end
