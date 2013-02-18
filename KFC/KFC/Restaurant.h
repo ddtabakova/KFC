@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSNumber * hasDunken;
 @property (nonatomic, retain) NSNumber * hasKidsLanding;
 @property (nonatomic, retain) NSNumber * hasKidsParties;
+@property (nonatomic, retain) NSNumber * hasOutdoor;
 @property (nonatomic, retain) NSNumber * hasParking;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * workingTime;

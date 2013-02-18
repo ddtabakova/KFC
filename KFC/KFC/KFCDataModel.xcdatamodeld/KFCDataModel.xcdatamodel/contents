@@ -22,6 +22,7 @@
         <attribute name="hasDunken" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasKidsLanding" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasKidsParties" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasOutdoor" optional="YES" syncable="YES"/>
         <attribute name="hasParking" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="lon" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -38,7 +39,7 @@
         <element name="City" positionX="250" positionY="306" width="128" height="75"/>
         <element name="Image" positionX="225" positionY="476" width="128" height="73"/>
         <element name="Menu" positionX="232" positionY="84" width="128" height="118"/>
-        <element name="Restaurant" positionX="45" positionY="180" width="128" height="238"/>
+        <element name="Restaurant" positionX="45" positionY="180" width="128" height="253"/>
         <element name="Type" positionX="423" positionY="189" width="128" height="73"/>
     </elements>
 </model>

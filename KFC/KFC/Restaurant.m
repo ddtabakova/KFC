@@ -19,6 +19,7 @@
 @dynamic hasDunken;
 @dynamic hasKidsLanding;
 @dynamic hasKidsParties;
+@dynamic hasOutdoor;
 @dynamic hasParking;
 @dynamic name;
 @dynamic workingTime;
