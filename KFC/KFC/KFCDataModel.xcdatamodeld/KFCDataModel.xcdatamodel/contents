@@ -22,7 +22,7 @@
         <attribute name="hasDunken" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasKidsLanding" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasKidsParties" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="hasOutdoor" optional="YES" syncable="YES"/>
+        <attribute name="hasOutdoor" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasParking" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="lon" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
