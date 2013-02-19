@@ -14,4 +14,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *itemNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *itemDescriptionLabel;
 @property (strong, nonatomic) IBOutlet UILabel *itemPriceLabel;
+
+
 @end

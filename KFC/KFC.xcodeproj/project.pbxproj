@@ -612,14 +612,14 @@
 		C7A19F7A16CBC09000CE9CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nikola Kirev (SE39T6UF6M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikola Kirev (SE39T6UF6M)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dimitar Dobrev (PMBE6NFJV7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dimitar Dobrev (PMBE6NFJV7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFC/KFC-Prefix.pch";
 				INFOPLIST_FILE = "KFC/KFC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7870EF43-4A0B-4F52-AD8C-C9CC770C9BA2";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7870EF43-4A0B-4F52-AD8C-C9CC770C9BA2";
+				PROVISIONING_PROFILE = "D6E55FC9-5C53-4F11-93E9-7B89258153DA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D6E55FC9-5C53-4F11-93E9-7B89258153DA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

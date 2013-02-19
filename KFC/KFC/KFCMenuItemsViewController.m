@@ -12,6 +12,8 @@
 
 @interface KFCMenuItemsViewController () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) NSIndexPath *selectedCell;
+
 @end
 
 @implementation KFCMenuItemsViewController
@@ -28,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.selectedCell = [NSIndexPath indexPathForRow:-1 inSection:-1];
 	// Do any additional setup after loading the view.
 }
 
@@ -59,6 +62,7 @@
     cell.itemPriceLabel.text = [NSString stringWithFormat:@"%.2fлв", ((Menu*)[self.items objectAtIndex:indexPath.row]).price.doubleValue];
     cell.itemDescriptionLabel.text = ((Menu*)[self.items objectAtIndex:indexPath.row]).desc;
     [cell.itemImageView setImage:[UIImage imageNamed:((Menu*)[self.items objectAtIndex:indexPath.row]).image]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
@@ -86,10 +90,20 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.selectedCell compare:indexPath] == NSOrderedSame) {
+        return 220.f;
+    }
     return 100.f;
 }
 
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath {
+    if ([self.selectedCell compare:indexPath] == NSOrderedSame) {
+        self.selectedCell = [NSIndexPath indexPathForRow:-1 inSection:-1];
+    } else {
+        self.selectedCell = indexPath;
+    }
+    [tableView beginUpdates];
+    [tableView endUpdates];
 }
 
 @end
