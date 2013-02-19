@@ -101,6 +101,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="t5j-6U-sqw"/>
+                    <connections>
+                        <outlet property="itemsTableView" destination="zCw-vp-cmU" id="L48-te-eU7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXt-jM-8Ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -296,6 +299,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCMenuItemsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="favoritesButtonTapped:"/>
+                <relationship kind="outlet" name="itemsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="KFCMenuViewController" superclassName="UIViewController">

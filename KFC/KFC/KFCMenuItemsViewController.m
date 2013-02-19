@@ -10,10 +10,12 @@
 #import "Menu.h"
 #import "KFCMenuItemCell.h"
 #import "AppDelegate.h"
+#import "DataManager.h"
 
 @interface KFCMenuItemsViewController () <UITableViewDataSource, UITableViewDelegate, KFCMenuItemCellDelegate>
 
 @property (nonatomic, strong) NSIndexPath *selectedCell;
+@property (weak, nonatomic) IBOutlet UITableView *itemsTableView;
 
 @end
 
@@ -68,6 +70,8 @@
     cell.itemDescriptionLabel.text = ((Menu*)[self.items objectAtIndex:indexPath.row]).desc;
     [cell.itemImageView setImage:[UIImage imageNamed:((Menu*)[self.items objectAtIndex:indexPath.row]).image]];
     cell.isLiked = [self checkForFavoriteItem:[self.items objectAtIndex:indexPath.row]];
+    cell.delegate = self;
+    cell.index = indexPath.row;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
@@ -114,9 +118,23 @@
 
 #pragma mark - KFCMenuItemCellDelegate methods
 
-- (void)likeButtonTappedForIndex:(CFIndex)index {
-    
+- (void)likeButtonTappedForIndex:(CFIndex)index toState:(BOOL)isLiked {
+    if (isLiked) {
+        [DataManager addMenuItem:[self.items objectAtIndex:index] toUserFavorites:((AppDelegate*)[[UIApplication sharedApplication] delegate]).currentUser withCompletion:^(NSError *error) {
+            if (error) {
+            
+            }
+        }];
+    } else {
+        [DataManager removeMenuItem:[self.items objectAtIndex:index] toUserFavorites:((AppDelegate*)[[UIApplication sharedApplication] delegate]).currentUser withCompletion:^(NSError *error) {
+            if (error) {
+                
+            }
+        }];
+    }
 }
+
+#pragma mark - Actions
 
 - (IBAction)favoritesButtonTapped:(id)sender {
 }

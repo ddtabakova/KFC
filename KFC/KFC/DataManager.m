@@ -70,6 +70,35 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     });
 }
 
++ (void)addMenuItem:(Menu*)menuItem toUserFavorites:(User*)user withCompletion:(void(^)(NSError *error))completion {
+    dispatch_queue_t currentQueue = dispatch_get_main_queue();
+    dispatch_async(q, ^{
+        [user addUserToMenuObject:menuItem];
+        
+        NSError *error = nil;
+        [cdCtx save:&error];
+        if(completion){
+            dispatch_async(currentQueue, ^{
+                completion(error);
+            });
+        }
+    });
+}
+
++ (void)removeMenuItem:(Menu*)menuItem toUserFavorites:(User*)user withCompletion:(void(^)(NSError *error))completion {
+    dispatch_queue_t currentQueue = dispatch_get_main_queue();
+    dispatch_async(q, ^{
+        [user removeUserToMenuObject:menuItem];
+        
+        NSError *error = nil;
+        [cdCtx save:&error];
+        if(completion){
+            dispatch_async(currentQueue, ^{
+                completion(error);
+            });
+        }
+    });
+}
 
 #pragma mark - CoreData stack
 

@@ -10,9 +10,12 @@
 #import "User.h"
 
 @interface DataManager : NSObject
+
 + (NSManagedObjectContext *)managedObjectContext;
 + (void)saveDefaultData;
 + (void)addNewUser:(NSString*)userEmail withCompletion:(void(^)(NSError *error))completion;
 + (void)userForEmail:(NSString*)email withCompletion:(void(^)(User *user, NSError *error))completion;
++ (void)addMenuItem:(Menu*)menuItem toUserFavorites:(User*)user withCompletion:(void(^)(NSError *error))completion;
++ (void)removeMenuItem:(Menu*)menuItem toUserFavorites:(User*)user withCompletion:(void(^)(NSError *error))completion;
 
 @end

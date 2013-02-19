@@ -10,7 +10,7 @@
 
 @protocol KFCMenuItemCellDelegate <NSObject>
 
-- (void)likeButtonTappedForIndex:(CFIndex)index;
+- (void)likeButtonTappedForIndex:(CFIndex)index toState:(BOOL)isLiked;
 
 @end
 

@@ -34,7 +34,8 @@
 }
 
 - (IBAction)likedButtonTapped:(id)sender {
-    [self.delegate likeButtonTappedForIndex:self.index];
+    [self setIsLiked:!self.isLiked];
+    [self.delegate likeButtonTappedForIndex:self.index toState:self.isLiked];
 }
 
 @end
