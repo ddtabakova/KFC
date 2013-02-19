@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Restaurant.h"
 
 @interface KFCRestaurantsDetailViewController : UIViewController
-
+@property (nonatomic, strong) Restaurant *restaurant;
 @end

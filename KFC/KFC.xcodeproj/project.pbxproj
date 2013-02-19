@@ -59,6 +59,28 @@
 		933E0AF116D2D69200686883 /* KFCRestaurantsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF016D2D69200686883 /* KFCRestaurantsDetailViewController.m */; };
 		933E0AF516D2D8F900686883 /* KFCFlipFromRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF416D2D8F900686883 /* KFCFlipFromRightSegue.m */; };
 		933E0AF816D2D92E00686883 /* KFCFlipFromLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AF716D2D92E00686883 /* KFCFlipFromLeftSegue.m */; };
+		933E0AFC16D4057200686883 /* KFCRestaurantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E0AFB16D4057200686883 /* KFCRestaurantCell.m */; };
+		933E0B2016D40E6B00686883 /* ico1.png in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B1916D40E6B00686883 /* ico1.png */; };
+		933E0B2116D40E6B00686883 /* ico2.png in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B1A16D40E6B00686883 /* ico2.png */; };
+		933E0B2216D40E6B00686883 /* ico3.png in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B1B16D40E6B00686883 /* ico3.png */; };
+		933E0B2316D40E6B00686883 /* ico4.png in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B1C16D40E6B00686883 /* ico4.png */; };
+		933E0B2416D40E6B00686883 /* ico5.png in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B1D16D40E6B00686883 /* ico5.png */; };
+		933E0B2516D40E6B00686883 /* ico6.png in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B1E16D40E6B00686883 /* ico6.png */; };
+		933E0B2616D40E6B00686883 /* ico7.png in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B1F16D40E6B00686883 /* ico7.png */; };
+		933E0B2816D412BB00686883 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933E0B2716D412BB00686883 /* Social.framework */; };
+		933E0B3616D4132C00686883 /* KFC CCS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B2916D4132C00686883 /* KFC CCS.jpg */; };
+		933E0B3716D4132C00686883 /* KFC Mall of Plovdiv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B2A16D4132C00686883 /* KFC Mall of Plovdiv.jpg */; };
+		933E0B3816D4132C00686883 /* KFC Park Mall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B2B16D4132C00686883 /* KFC Park Mall.jpg */; };
+		933E0B3916D4132C00686883 /* KFC Royal Beach Mall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B2C16D4132C00686883 /* KFC Royal Beach Mall.jpg */; };
+		933E0B3A16D4132C00686883 /* KFC The Mall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B2D16D4132C00686883 /* KFC The Mall.jpg */; };
+		933E0B3B16D4132C00686883 /* KFC Арена Младост.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B2E16D4132C00686883 /* KFC Арена Младост.jpg */; };
+		933E0B3C16D4132C00686883 /* KFC Бургас.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B2F16D4132C00686883 /* KFC Бургас.jpg */; };
+		933E0B3D16D4132C00686883 /* KFC Гарибалди.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B3016D4132C00686883 /* KFC Гарибалди.jpg */; };
+		933E0B3E16D4132C00686883 /* KFC Лъвов мост.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B3116D4132C00686883 /* KFC Лъвов мост.jpg */; };
+		933E0B3F16D4132C00686883 /* KFC Люлин.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B3216D4132C00686883 /* KFC Люлин.jpg */; };
+		933E0B4016D4132C00686883 /* KFC Сахаров.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B3316D4132C00686883 /* KFC Сахаров.jpg */; };
+		933E0B4116D4132C00686883 /* KFC Сердика център.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B3416D4132C00686883 /* KFC Сердика център.jpg */; };
+		933E0B4216D4132C00686883 /* KFC Стамболийски.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 933E0B3516D4132C00686883 /* KFC Стамболийски.jpg */; };
 		9364947616D11A7E00F265DF /* KFCRestaurantsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */; };
 		9364947816D11AE600F265DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9364947716D11AE600F265DF /* MapKit.framework */; };
 		9364947B16D1401C00F265DF /* RestourantAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364947A16D1401C00F265DF /* RestourantAnnotation.m */; };
@@ -153,6 +175,29 @@
 		933E0AF416D2D8F900686883 /* KFCFlipFromRightSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCFlipFromRightSegue.m; sourceTree = "<group>"; };
 		933E0AF616D2D92E00686883 /* KFCFlipFromLeftSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCFlipFromLeftSegue.h; sourceTree = "<group>"; };
 		933E0AF716D2D92E00686883 /* KFCFlipFromLeftSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCFlipFromLeftSegue.m; sourceTree = "<group>"; };
+		933E0AFA16D4057200686883 /* KFCRestaurantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantCell.h; sourceTree = "<group>"; };
+		933E0AFB16D4057200686883 /* KFCRestaurantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantCell.m; sourceTree = "<group>"; };
+		933E0B1916D40E6B00686883 /* ico1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico1.png; sourceTree = "<group>"; };
+		933E0B1A16D40E6B00686883 /* ico2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico2.png; sourceTree = "<group>"; };
+		933E0B1B16D40E6B00686883 /* ico3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico3.png; sourceTree = "<group>"; };
+		933E0B1C16D40E6B00686883 /* ico4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico4.png; sourceTree = "<group>"; };
+		933E0B1D16D40E6B00686883 /* ico5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico5.png; sourceTree = "<group>"; };
+		933E0B1E16D40E6B00686883 /* ico6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico6.png; sourceTree = "<group>"; };
+		933E0B1F16D40E6B00686883 /* ico7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico7.png; sourceTree = "<group>"; };
+		933E0B2716D412BB00686883 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		933E0B2916D4132C00686883 /* KFC CCS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC CCS.jpg"; sourceTree = "<group>"; };
+		933E0B2A16D4132C00686883 /* KFC Mall of Plovdiv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Mall of Plovdiv.jpg"; sourceTree = "<group>"; };
+		933E0B2B16D4132C00686883 /* KFC Park Mall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Park Mall.jpg"; sourceTree = "<group>"; };
+		933E0B2C16D4132C00686883 /* KFC Royal Beach Mall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Royal Beach Mall.jpg"; sourceTree = "<group>"; };
+		933E0B2D16D4132C00686883 /* KFC The Mall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC The Mall.jpg"; sourceTree = "<group>"; };
+		933E0B2E16D4132C00686883 /* KFC Арена Младост.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Арена Младост.jpg"; sourceTree = "<group>"; };
+		933E0B2F16D4132C00686883 /* KFC Бургас.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Бургас.jpg"; sourceTree = "<group>"; };
+		933E0B3016D4132C00686883 /* KFC Гарибалди.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Гарибалди.jpg"; sourceTree = "<group>"; };
+		933E0B3116D4132C00686883 /* KFC Лъвов мост.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Лъвов мост.jpg"; sourceTree = "<group>"; };
+		933E0B3216D4132C00686883 /* KFC Люлин.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Люлин.jpg"; sourceTree = "<group>"; };
+		933E0B3316D4132C00686883 /* KFC Сахаров.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Сахаров.jpg"; sourceTree = "<group>"; };
+		933E0B3416D4132C00686883 /* KFC Сердика център.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Сердика център.jpg"; sourceTree = "<group>"; };
+		933E0B3516D4132C00686883 /* KFC Стамболийски.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KFC Стамболийски.jpg"; sourceTree = "<group>"; };
 		9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCRestaurantsMapViewController.h; sourceTree = "<group>"; };
 		9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCRestaurantsMapViewController.m; sourceTree = "<group>"; };
 		9364947716D11AE600F265DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -204,6 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933E0B2816D412BB00686883 /* Social.framework in Frameworks */,
 				9364947816D11AE600F265DF /* MapKit.framework in Frameworks */,
 				C7998A7016CD22F600729FE3 /* CoreData.framework in Frameworks */,
 				C7A19F5A16CBC09000CE9CEE /* UIKit.framework in Frameworks */,
@@ -225,6 +271,8 @@
 				2E845C8516D2E316004E6CED /* KFCMenuItemCell.h */,
 				2E845C8616D2E316004E6CED /* KFCMenuItemCell.m */,
 				2E845C8816D2E329004E6CED /* KFCMenuItemCell.xib */,
+				933E0AFA16D4057200686883 /* KFCRestaurantCell.h */,
+				933E0AFB16D4057200686883 /* KFCRestaurantCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -286,6 +334,49 @@
 			name = CustomSegue;
 			sourceTree = "<group>";
 		};
+		933E0AF916D4046C00686883 /* RestaurantImages */ = {
+			isa = PBXGroup;
+			children = (
+				933E0AFE16D40E3A00686883 /* Photos */,
+				933E0AFD16D40E3000686883 /* Icons */,
+			);
+			name = RestaurantImages;
+			sourceTree = "<group>";
+		};
+		933E0AFD16D40E3000686883 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				933E0B1916D40E6B00686883 /* ico1.png */,
+				933E0B1A16D40E6B00686883 /* ico2.png */,
+				933E0B1B16D40E6B00686883 /* ico3.png */,
+				933E0B1C16D40E6B00686883 /* ico4.png */,
+				933E0B1D16D40E6B00686883 /* ico5.png */,
+				933E0B1E16D40E6B00686883 /* ico6.png */,
+				933E0B1F16D40E6B00686883 /* ico7.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		933E0AFE16D40E3A00686883 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				933E0B2916D4132C00686883 /* KFC CCS.jpg */,
+				933E0B2A16D4132C00686883 /* KFC Mall of Plovdiv.jpg */,
+				933E0B2B16D4132C00686883 /* KFC Park Mall.jpg */,
+				933E0B2C16D4132C00686883 /* KFC Royal Beach Mall.jpg */,
+				933E0B2D16D4132C00686883 /* KFC The Mall.jpg */,
+				933E0B2E16D4132C00686883 /* KFC Арена Младост.jpg */,
+				933E0B2F16D4132C00686883 /* KFC Бургас.jpg */,
+				933E0B3016D4132C00686883 /* KFC Гарибалди.jpg */,
+				933E0B3116D4132C00686883 /* KFC Лъвов мост.jpg */,
+				933E0B3216D4132C00686883 /* KFC Люлин.jpg */,
+				933E0B3316D4132C00686883 /* KFC Сахаров.jpg */,
+				933E0B3416D4132C00686883 /* KFC Сердика център.jpg */,
+				933E0B3516D4132C00686883 /* KFC Стамболийски.jpg */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
 		C7998A3116CD19FC00729FE3 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +416,7 @@
 				2E845BCF16D2C20F004E6CED /* bg@2x.png */,
 				2E845BCD16D2C0C3004E6CED /* accesory.png */,
 				2E845BD416D2C3A7004E6CED /* navbar@2x.png */,
+				933E0AF916D4046C00686883 /* RestaurantImages */,
 				2E845C3416D2E1C5004E6CED /* Menu Images */,
 				C79CB0F916CE7B3900771DBA /* TabBar  */,
 			);
@@ -362,6 +454,7 @@
 		C7A19F5816CBC09000CE9CEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				933E0B2716D412BB00686883 /* Social.framework */,
 				9364947716D11AE600F265DF /* MapKit.framework */,
 				C7998A6E16CD22E200729FE3 /* CoreData.framework */,
 				C7A19F5916CBC09000CE9CEE /* UIKit.framework */,
@@ -383,7 +476,6 @@
 				C79CB10416CE7F9A00771DBA /* KFCTabBarController.m */,
 				9364947416D11A7E00F265DF /* KFCRestaurantsMapViewController.h */,
 				9364947516D11A7E00F265DF /* KFCRestaurantsMapViewController.m */,
-				933E0AF216D2D8A200686883 /* CustomSegue */,
 				933E0AEC16D2D68100686883 /* KFCRestaurantsListViewController.h */,
 				933E0AED16D2D68100686883 /* KFCRestaurantsListViewController.m */,
 				933E0AEF16D2D69200686883 /* KFCRestaurantsDetailViewController.h */,
@@ -392,6 +484,7 @@
 				2E845BC216D2AA1E004E6CED /* KFCMenuViewController.m */,
 				2E845BD616D2C588004E6CED /* KFCMenuItemsViewController.h */,
 				2E845BD716D2C588004E6CED /* KFCMenuItemsViewController.m */,
+				933E0AF216D2D8A200686883 /* CustomSegue */,
 				2E845BC716D2BB4C004E6CED /* Views */,
 				C7998A3116CD19FC00729FE3 /* Data Model */,
 				C79CB0F716CE7B2E00771DBA /* Images */,
@@ -520,6 +613,26 @@
 				C7A2637016D3BC7E008053EE /* KFCDataModel.sqlite in Resources */,
 				C7A2637716D3D555008053EE /* notliked@2x.png in Resources */,
 				C7A2637816D3D555008053EE /* liked@2x.png in Resources */,
+				933E0B2016D40E6B00686883 /* ico1.png in Resources */,
+				933E0B2116D40E6B00686883 /* ico2.png in Resources */,
+				933E0B2216D40E6B00686883 /* ico3.png in Resources */,
+				933E0B2316D40E6B00686883 /* ico4.png in Resources */,
+				933E0B2416D40E6B00686883 /* ico5.png in Resources */,
+				933E0B2516D40E6B00686883 /* ico6.png in Resources */,
+				933E0B2616D40E6B00686883 /* ico7.png in Resources */,
+				933E0B3616D4132C00686883 /* KFC CCS.jpg in Resources */,
+				933E0B3716D4132C00686883 /* KFC Mall of Plovdiv.jpg in Resources */,
+				933E0B3816D4132C00686883 /* KFC Park Mall.jpg in Resources */,
+				933E0B3916D4132C00686883 /* KFC Royal Beach Mall.jpg in Resources */,
+				933E0B3A16D4132C00686883 /* KFC The Mall.jpg in Resources */,
+				933E0B3B16D4132C00686883 /* KFC Арена Младост.jpg in Resources */,
+				933E0B3C16D4132C00686883 /* KFC Бургас.jpg in Resources */,
+				933E0B3D16D4132C00686883 /* KFC Гарибалди.jpg in Resources */,
+				933E0B3E16D4132C00686883 /* KFC Лъвов мост.jpg in Resources */,
+				933E0B3F16D4132C00686883 /* KFC Люлин.jpg in Resources */,
+				933E0B4016D4132C00686883 /* KFC Сахаров.jpg in Resources */,
+				933E0B4116D4132C00686883 /* KFC Сердика център.jpg in Resources */,
+				933E0B4216D4132C00686883 /* KFC Стамболийски.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +665,7 @@
 				933E0AF816D2D92E00686883 /* KFCFlipFromLeftSegue.m in Sources */,
 				2E845C8716D2E316004E6CED /* KFCMenuItemCell.m in Sources */,
 				C7A2636C16D3B54E008053EE /* User.m in Sources */,
+				933E0AFC16D4057200686883 /* KFCRestaurantCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

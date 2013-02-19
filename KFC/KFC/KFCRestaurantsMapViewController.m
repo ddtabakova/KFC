@@ -10,6 +10,7 @@
 #import "DataManager.h"
 #import "Restaurant.h"
 #import "RestourantAnnotation.h"
+#import "KFCRestaurantsDetailViewController.h"
 
 @interface KFCRestaurantsMapViewController ()
 @property (strong, nonatomic) IBOutlet MKMapView *restaurantsMapView;
@@ -54,7 +55,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"ShowDetailFromMap"]) {
+        KFCRestaurantsDetailViewController *destinationVC = [segue destinationViewController];
+        [destinationVC setRestaurant:sender];
+    }
+}
+
 - (IBAction)showListAction:(id)sender {
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -113,8 +122,7 @@
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
-    
-    [self performSegueWithIdentifier:@"ShowDetailFromMap" sender:nil];
+    [self performSegueWithIdentifier:@"ShowDetailFromMap" sender:[[self.resultsController fetchedObjects] objectAtIndex:[((RestourantAnnotation *)view.annotation) annotationTag]]];
 }
 
 @end

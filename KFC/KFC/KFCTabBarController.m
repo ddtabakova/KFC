@@ -73,7 +73,7 @@
     if (buttonIndex == 1) {
         UIDevice *device = [UIDevice currentDevice];
         if ([[device model] isEqualToString:@"iPhone"] ) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:359883319004"]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:35970011999"]]];
         } else {
             UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Грешка" message:@"Не може да бъде проведен разговор от това устройство." delegate:nil cancelButtonTitle:@"Ок" otherButtonTitles:nil];
             [alert show];
