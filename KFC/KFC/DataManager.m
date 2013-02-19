@@ -13,6 +13,7 @@
 #import "Menu.h"
 #import "Type.h"
 #import "City.h"
+#import "User.h"
 
 @implementation DataManager
 
@@ -26,6 +27,48 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     cdCtx = [self managedObjectContext];
     //[DataManager saveDefaultData];
 };
+
++ (void)addNewUser:(NSString*)userEmail withCompletion:(void(^)(NSError *error))completion {
+    dispatch_queue_t currentQueue = dispatch_get_main_queue();
+    dispatch_async(q, ^{
+        [self userForEmail:userEmail withCompletion:^(User *user, NSError *error) {
+            if(!error && !user){
+                User *newUser = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:cdCtx];
+                newUser.email = userEmail;
+                
+                NSError *userError = nil;
+                [cdCtx save:&userError];
+                if(completion){
+                    dispatch_async(currentQueue, ^{
+                        completion(error);
+                    });
+                }
+            } else {
+                if(completion){
+                    dispatch_async(currentQueue, ^{
+                        completion(error);
+                    });
+                }
+            }
+        }];
+    });
+}
+
++ (void)userForEmail:(NSString*)email withCompletion:(void(^)(User *user, NSError *error))completion {
+    dispatch_queue_t currentQueue = dispatch_get_main_queue();
+    dispatch_async(q, ^{
+        NSFetchRequest *request = [[NSFetchRequest alloc] init];
+        [request setEntity:[NSEntityDescription entityForName:@"User" inManagedObjectContext:cdCtx]];
+        [request setPredicate:[NSPredicate predicateWithFormat:@"email == %@", email]];
+        [request setRelationshipKeyPathsForPrefetching:[NSArray arrayWithObject:@"userToMenu"]];
+        NSError *error = nil;
+        
+        User *user = [[cdCtx executeFetchRequest:request error:&error] lastObject];
+        dispatch_async(currentQueue, ^{
+            completion(user, error);
+        });
+    });
+}
 
 
 #pragma mark - CoreData stack

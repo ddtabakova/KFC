@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
 @interface DataManager : NSObject
 + (NSManagedObjectContext *)managedObjectContext;
 + (void)saveDefaultData;
++ (void)addNewUser:(NSString*)userEmail withCompletion:(void(^)(NSError *error))completion;
++ (void)userForEmail:(NSString*)email withCompletion:(void(^)(User *user, NSError *error))completion;
+
 @end

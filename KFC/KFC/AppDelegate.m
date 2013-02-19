@@ -15,6 +15,16 @@
 {
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:199.0f/255.0f green:17.0f/255.0f blue:34.0f/255.0f alpha:1.0f]];
+    
+    [DataManager addNewUser:@"user@gmail.com" withCompletion:^(NSError *error) {
+        if (!error) {
+            [DataManager userForEmail:@"user@gmail.com" withCompletion:^(User *user, NSError *error) {
+                if (!error) {
+                    self.currentUser = user;
+                }
+            }];
+        }
+    }];
     return YES;
 }
 							
