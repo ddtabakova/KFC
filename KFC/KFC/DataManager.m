@@ -304,7 +304,7 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     
     Menu *m27 = [NSEntityDescription insertNewObjectForEntityForName:@"Menu" inManagedObjectContext:cdCtx];
     m27.name = @"Pepsi 500ml";
-    m27.desc = @"Бира Загорка наливна 400ml";
+    m27.desc = @"";
     m27.price = [NSNumber numberWithDouble:2.69];
     m27.image = @"m27.png";
     [m27 addMenuToTypeObject:t5];

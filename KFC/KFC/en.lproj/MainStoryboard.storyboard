@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Qv7-nY-wLv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Qv7-nY-wLv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -282,6 +282,36 @@
     <resources>
         <image name="bg@2x.png" width="640" height="960"/>
     </resources>
+    <classes>
+        <class className="KFCBackground" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCBackground.h"/>
+        </class>
+        <class className="KFCMenuItemsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCMenuItemsViewController.h"/>
+        </class>
+        <class className="KFCMenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCMenuViewController.h"/>
+        </class>
+        <class className="KFCNavBar" superclassName="UINavigationBar">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCNavBar.h"/>
+        </class>
+        <class className="KFCRestaurantsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsDetailViewController.h"/>
+        </class>
+        <class className="KFCRestaurantsListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsListViewController.h"/>
+        </class>
+        <class className="KFCRestaurantsMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCRestaurantsMapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showListAction:"/>
+                <relationship kind="outlet" name="restaurantsMapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="KFCTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCTabBarController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
