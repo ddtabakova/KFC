@@ -87,6 +87,8 @@
 		C7A19F7316CBC09000CE9CEE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A19F7116CBC09000CE9CEE /* MainStoryboard.storyboard */; };
 		C7A2636C16D3B54E008053EE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A2636B16D3B54E008053EE /* User.m */; };
 		C7A2637016D3BC7E008053EE /* KFCDataModel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C7A2636F16D3BC7E008053EE /* KFCDataModel.sqlite */; };
+		C7A2637716D3D555008053EE /* notliked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A2637516D3D555008053EE /* notliked@2x.png */; };
+		C7A2637816D3D555008053EE /* liked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A2637616D3D555008053EE /* liked@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +195,8 @@
 		C7A2636A16D3B54E008053EE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C7A2636B16D3B54E008053EE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C7A2636F16D3BC7E008053EE /* KFCDataModel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KFCDataModel.sqlite; sourceTree = "<group>"; };
+		C7A2637516D3D555008053EE /* notliked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notliked@2x.png"; sourceTree = "<group>"; };
+		C7A2637616D3D555008053EE /* liked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "liked@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +320,8 @@
 		C79CB0F716CE7B2E00771DBA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C7A2637516D3D555008053EE /* notliked@2x.png */,
+				C7A2637616D3D555008053EE /* liked@2x.png */,
 				2E845BCF16D2C20F004E6CED /* bg@2x.png */,
 				2E845BCD16D2C0C3004E6CED /* accesory.png */,
 				2E845BD416D2C3A7004E6CED /* navbar@2x.png */,
@@ -512,6 +518,8 @@
 				2E845C8316D2E1D7004E6CED /* prices_2_bg.jpg in Resources */,
 				2E845C8916D2E329004E6CED /* KFCMenuItemCell.xib in Resources */,
 				C7A2637016D3BC7E008053EE /* KFCDataModel.sqlite in Resources */,
+				C7A2637716D3D555008053EE /* notliked@2x.png in Resources */,
+				C7A2637816D3D555008053EE /* liked@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

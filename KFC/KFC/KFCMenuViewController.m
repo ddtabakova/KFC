@@ -96,4 +96,6 @@
     [self performSegueWithIdentifier:@"TypeItems" sender:self];
 }
 
+- (IBAction)favoritesButtonTapped:(id)sender {
+}
 @end

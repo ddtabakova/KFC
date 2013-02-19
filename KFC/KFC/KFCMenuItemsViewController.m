@@ -9,8 +9,9 @@
 #import "KFCMenuItemsViewController.h"
 #import "Menu.h"
 #import "KFCMenuItemCell.h"
+#import "AppDelegate.h"
 
-@interface KFCMenuItemsViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface KFCMenuItemsViewController () <UITableViewDataSource, UITableViewDelegate, KFCMenuItemCellDelegate>
 
 @property (nonatomic, strong) NSIndexPath *selectedCell;
 
@@ -40,6 +41,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)checkForFavoriteItem:(Menu*)item {
+    return [((AppDelegate*)[[UIApplication sharedApplication] delegate]).currentUser.userToMenu containsObject:item];
+}
+
 #pragma mark - UITableViewDataSource methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -62,6 +67,7 @@
     cell.itemPriceLabel.text = [NSString stringWithFormat:@"%.2fлв", ((Menu*)[self.items objectAtIndex:indexPath.row]).price.doubleValue];
     cell.itemDescriptionLabel.text = ((Menu*)[self.items objectAtIndex:indexPath.row]).desc;
     [cell.itemImageView setImage:[UIImage imageNamed:((Menu*)[self.items objectAtIndex:indexPath.row]).image]];
+    cell.isLiked = [self checkForFavoriteItem:[self.items objectAtIndex:indexPath.row]];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
@@ -104,6 +110,15 @@
     }
     [tableView beginUpdates];
     [tableView endUpdates];
+}
+
+#pragma mark - KFCMenuItemCellDelegate methods
+
+- (void)likeButtonTappedForIndex:(CFIndex)index {
+    
+}
+
+- (IBAction)favoritesButtonTapped:(id)sender {
 }
 
 @end

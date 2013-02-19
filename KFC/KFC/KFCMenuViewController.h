@@ -10,4 +10,5 @@
 
 @interface KFCMenuViewController : UIViewController
 
+- (IBAction)favoritesButtonTapped:(id)sender;
 @end

@@ -10,6 +10,8 @@
 
 @implementation KFCMenuItemCell
 
+@synthesize isLiked = _isLiked;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -19,11 +21,20 @@
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setIsLiked:(BOOL)isLiked {
+    _isLiked = isLiked;
+    [self.likeButton setContentMode:UIViewContentModeCenter];
+    [self.likeButton setImage:[UIImage imageNamed:isLiked ? @"liked.png" : @"notliked.png"] forState:UIControlStateNormal];
+}
+
+- (IBAction)likedButtonTapped:(id)sender {
+    [self.delegate likeButtonTappedForIndex:self.index];
 }
 
 @end
