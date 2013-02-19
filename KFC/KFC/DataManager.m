@@ -24,6 +24,7 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
 + (void)initialize {
     q = dispatch_queue_create("BNDataManager Worker Queue", NULL);
     cdCtx = [self managedObjectContext];
+    //[DataManager saveDefaultData];
 };
 
 
@@ -728,6 +729,11 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator;
     [r13 addRestaurantToCityObject:c5];
     
     [c5 addCityToRestaurant:[NSSet setWithObject:r13]];
+    
+    NSError *error;
+    if (![cdCtx save:&error]) {
+        NSLog(@"Couldn't save: %@", [error localizedDescription]);
+    }
 }
 
 

@@ -85,6 +85,8 @@
 		C7A19F6E16CBC09000CE9CEE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A19F6D16CBC09000CE9CEE /* Default@2x.png */; };
 		C7A19F7016CBC09000CE9CEE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A19F6F16CBC09000CE9CEE /* Default-568h@2x.png */; };
 		C7A19F7316CBC09000CE9CEE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A19F7116CBC09000CE9CEE /* MainStoryboard.storyboard */; };
+		C7A2636C16D3B54E008053EE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A2636B16D3B54E008053EE /* User.m */; };
+		C7A2637016D3BC7E008053EE /* KFCDataModel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C7A2636F16D3BC7E008053EE /* KFCDataModel.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -188,6 +190,9 @@
 		C7A19F6D16CBC09000CE9CEE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C7A19F6F16CBC09000CE9CEE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C7A19F7216CBC09000CE9CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C7A2636A16D3B54E008053EE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C7A2636B16D3B54E008053EE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C7A2636F16D3BC7E008053EE /* KFCDataModel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = KFCDataModel.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +285,7 @@
 		C7998A3116CD19FC00729FE3 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				C7A2636F16D3BC7E008053EE /* KFCDataModel.sqlite */,
 				C7998A3316CD1A3100729FE3 /* KFCDataModel.xcdatamodeld */,
 				C7998A6B16CD20F300729FE3 /* DataManager.h */,
 				C7998A6C16CD20F300729FE3 /* DataManager.m */,
@@ -301,6 +307,8 @@
 				C7998A9616CD4BE100729FE3 /* Restaurant.m */,
 				C7998A9816CD567000729FE3 /* City.h */,
 				C7998A9916CD567000729FE3 /* City.m */,
+				C7A2636A16D3B54E008053EE /* User.h */,
+				C7A2636B16D3B54E008053EE /* User.m */,
 			);
 			name = "Data Objects";
 			sourceTree = "<group>";
@@ -503,6 +511,7 @@
 				2E845C8216D2E1D7004E6CED /* m51.png in Resources */,
 				2E845C8316D2E1D7004E6CED /* prices_2_bg.jpg in Resources */,
 				2E845C8916D2E329004E6CED /* KFCMenuItemCell.xib in Resources */,
+				C7A2637016D3BC7E008053EE /* KFCDataModel.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +543,7 @@
 				933E0AF516D2D8F900686883 /* KFCFlipFromRightSegue.m in Sources */,
 				933E0AF816D2D92E00686883 /* KFCFlipFromLeftSegue.m in Sources */,
 				2E845C8716D2E316004E6CED /* KFCMenuItemCell.m in Sources */,
+				C7A2636C16D3B54E008053EE /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
