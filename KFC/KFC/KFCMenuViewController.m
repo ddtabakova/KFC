@@ -9,6 +9,7 @@
 #import "KFCMenuViewController.h"
 #import "DataManager.h"
 #import "Type.h"
+#import "AppDelegate.h"
 #import "KFCMenuItemsViewController.h"
 
 @interface KFCMenuViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -59,6 +60,9 @@
     if ([[segue identifier] isEqualToString:@"TypeItems"]) {
         KFCMenuItemsViewController *vc = [segue destinationViewController];
         vc.items = [NSArray arrayWithArray:((Type*)[self.datasource objectAtIndexPath:self.selectedIndexPath]).typeToMenu.allObjects];
+    } else if ([[segue identifier] isEqualToString:@"Favorites"]) {
+        KFCMenuItemsViewController *vc = [segue destinationViewController];
+        vc.items = [NSArray arrayWithArray:((AppDelegate*)[[UIApplication sharedApplication] delegate]).currentUser.userToMenu.allObjects];
     }
 }
 
@@ -96,6 +100,10 @@
     [self performSegueWithIdentifier:@"TypeItems" sender:self];
 }
 
+#pragma mark - Actions
+
 - (IBAction)favoritesButtonTapped:(id)sender {
+    [self performSegueWithIdentifier:@"Favorites" sender:self];
 }
+
 @end

@@ -64,6 +64,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Любими" id="gqf-gE-FVY">
                             <connections>
                                 <action selector="favoritesButtonTapped:" destination="C9h-yr-HBG" id="FaS-cG-hnp"/>
+                                <segue destination="oZG-Tz-Nps" kind="push" identifier="Favorites" id="fse-Ir-x1e"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -298,7 +299,6 @@
         <class className="KFCMenuItemsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KFCMenuItemsViewController.h"/>
             <relationships>
-                <relationship kind="action" name="favoritesButtonTapped:"/>
                 <relationship kind="outlet" name="itemsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
@@ -334,7 +334,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="1Ql-kl-8Kt"/>
         <segue reference="X74-ej-6NW"/>
+        <segue reference="1Ql-kl-8Kt"/>
+        <segue reference="fse-Ir-x1e"/>
     </inferredMetricsTieBreakers>
 </document>

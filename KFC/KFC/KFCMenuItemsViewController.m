@@ -134,9 +134,5 @@
     }
 }
 
-#pragma mark - Actions
-
-- (IBAction)favoritesButtonTapped:(id)sender {
-}
 
 @end
